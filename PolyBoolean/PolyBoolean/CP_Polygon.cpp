@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "CP_Polygon.h"
-void gb_distanceMinPointLoop(double&d, int& idRegion, int& idLoop,CP_Point& pt, CP_Polygon& pn)
+void gb_distanceMinPointLoop(double&d, int& idRegion, int& idLoop,CP_Point& pt, CP_Polygon& pn)//到点最近的环
 {
 	d = 0.0;
 	idRegion = -1;
@@ -31,7 +31,7 @@ void gb_distanceMinPointLoop(double&d, int& idRegion, int& idLoop,CP_Point& pt, 
 		} // for(j)结束
 	} // for(i)结束
 } // 函数gb_distanceMinPointPolygon结束
-void gb_distanceMinPointPolygon(double&d, int& id, CP_Point& pt, CP_Polygon& pn)
+void gb_distanceMinPointPolygon(double&d, int& id, CP_Point& pt, CP_Polygon& pn)//到点最近的点
 {
 	d = 0.0;
 	id = -1;
@@ -52,7 +52,7 @@ void gb_distanceMinPointPolygon(double&d, int& id, CP_Point& pt, CP_Polygon& pn)
 		} // if结束
 	} // for结束
 } // 函数gb_distanceMinPointPolygon结束
-double gb_distancePointPoint(CP_Point& p1, CP_Point& p2)
+double gb_distancePointPoint(CP_Point& p1, CP_Point& p2)//两点之间距离
 {
 	double dx = p1.m_x - p2.m_x;
 	double dy = p1.m_y - p2.m_y;
@@ -87,7 +87,7 @@ double gb_distancePointSegment(CP_Point& pt, CP_Point& p1, CP_Point& p2)
 	d = sqrt(d);
 	return d;
 } // 函数gb_distancePointPoint结束
-void gb_getIntArrayPointInPolygon(VT_IntArray& vi, CP_Polygon& pn, CP_Point& p, double eT)
+void gb_getIntArrayPointInPolygon(VT_IntArray& vi, CP_Polygon& pn, CP_Point& p, double eT)//在向量中记录到点p距离小于eT的点编号
 {
 	int i, n;
 	double d;
@@ -137,7 +137,7 @@ void gb_insertPointInPolygon(CP_Polygon& pn, int& idRegion, int& idLoop, int& id
 	pn.m_regionArray[idRegion].m_loopArray[idLoop].m_pointIDArray.insert(
 		pn.m_regionArray[idRegion].m_loopArray[idLoop].m_pointIDArray.begin() + idPointInLoop + 1,
 		nv);
-} // 函数gb_findPointInLoop结束
+} // 函数gb_insertPointInPolygon结束
 void gb_intArrayInit(VT_IntArray& vi, int data)
 {
 	int n = vi.size();
