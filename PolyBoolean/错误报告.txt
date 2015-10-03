@@ -1,0 +1,416 @@
+------ 已启动全部重新生成: 项目: PolyBoolean, 配置: Debug x64 ------
+项目文件包含 ToolsVersion="14.0" 设置，但此工具集未知或缺失。您可以通过为此工具集安装相应的 .NET Framework 来解决此问题。将项目视为具有 ToolsVersion="4.0" 设置。
+  stdafx.cpp
+  PolyBooleanView.cpp
+PolyBooleanView.cpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+PolyBooleanView.cpp(174): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(189): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(262): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(290): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(316): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(370): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(384): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(390): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(395): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(402): error C2039: “TextOutA”: 不是“CDC”的成员
+          c:\program files (x86)\microsoft visual studio 11.0\vc\atlmfc\include\afxwin.h(565) : 参见“CDC”的声明
+PolyBooleanView.cpp(420): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(420): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(420): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(427): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(431): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(431): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(431): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(438): error C2001: 常量中有换行符
+PolyBooleanView.cpp(438): error C2146: 语法错误: 缺少“)”(在标识符“鎿嶄綔纭”的前面)
+PolyBooleanView.cpp(438): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [107]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(441): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(441): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(442): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(442): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(442): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(454): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(466): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(474): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(494): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(494): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(494): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(495): error C2146: 语法错误: 缺少“)”(在标识符“璇风户缁叾浠栨搷浣”的前面)
+PolyBooleanView.cpp(495): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(495): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(530): error C2084: 函数“void CPolyBooleanView::OnRButtonUp(UINT,CPoint)”已有主体
+          e:\polyboolean\polyboolean\polyboolean\PolyBooleanView.h(53) : 参见“OnRButtonUp”的前一个定义
+PolyBooleanView.cpp(568): error C2065: “CMainFrame”: 未声明的标识符
+PolyBooleanView.cpp(568): error C2065: “pMainFrame”: 未声明的标识符
+PolyBooleanView.cpp(568): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(571): error C2065: “pMainFrame”: 未声明的标识符
+PolyBooleanView.cpp(571): error C2227: “->GetDescendantWindow”的左边必须指向类/结构/联合/泛型类型
+          类型是“'unknown-type'”
+PolyBooleanView.cpp(583): error C2664: “CMFCRibbonButton::SetText”: 不能将参数 1 从“char *”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(595): error C2664: “CMFCRibbonButton::SetText”: 不能将参数 1 从“char *”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(615): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [11]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(616): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [11]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(635): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [11]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(636): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [11]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(663): error C2664: “atoi”: 不能将参数 1 从“CString”转换为“const char *”
+          没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+PolyBooleanView.cpp(669): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(692): error C2664: “atof”: 不能将参数 1 从“CString”转换为“const char *”
+          没有可用于执行该转换的用户定义的转换运算符，或者无法调用该运算符
+PolyBooleanView.cpp(696): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(720): error C2001: 常量中有换行符
+PolyBooleanView.cpp(721): error C2143: 语法错误 : 缺少“)”(在“else”的前面)
+PolyBooleanView.cpp(721): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(721): error C2001: 常量中有换行符
+PolyBooleanView.cpp(722): error C2143: 语法错误 : 缺少“)”(在“}”的前面)
+PolyBooleanView.cpp(736): error C2146: 语法错误: 缺少“)”(在标识符“涓嶅钩绉伙紝涔熶笉缂╂斁銆”的前面)
+PolyBooleanView.cpp(736): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(736): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(748): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(749): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(873): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+PolyBooleanView.cpp(1004): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1004): error C2146: 语法错误: 缺少“)”(在标识符“鐢ㄩ紶鏍囧彸閿粨鏉熺偣娣诲姞鎿嶄綔”的前面)
+PolyBooleanView.cpp(1004): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1015): error C2146: 语法错误: 缺少“)”(在标识符“鐢ㄩ紶鏍囧彸閿粨鏉熷鐜坊鍔犳搷浣”的前面)
+PolyBooleanView.cpp(1015): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1015): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1016): error C2146: 语法错误: 缺少“)”(在标识符“鐢ㄩ紶鏍囧彸閿粨鏉熷唴鐜坊鍔犳搷浣”的前面)
+PolyBooleanView.cpp(1016): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1016): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1357): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1361): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1375): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1379): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1402): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1403): error C2143: 语法错误 : 缺少“)”(在“if”的前面)
+PolyBooleanView.cpp(1404): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1405): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1406): error C2143: 语法错误 : 缺少“)”(在“}”的前面)
+PolyBooleanView.cpp(1418): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1418): error C2146: 语法错误: 缺少“)”(在标识符“鎿嶄綔閿欒”的前面)
+PolyBooleanView.cpp(1418): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [114]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(1436): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1437): error C2143: 语法错误 : 缺少“)”(在“}”的前面)
+PolyBooleanView.cpp(1437): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+PolyBooleanView.cpp(1449): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1449): error C2146: 语法错误: 缺少“)”(在标识符“鎿嶄綔閿欒”的前面)
+PolyBooleanView.cpp(1449): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [114]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(1483): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1489): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1492): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1514): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1517): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1530): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1531): error C2143: 语法错误 : 缺少“)”(在“}”的前面)
+PolyBooleanView.cpp(1531): error C2143: 语法错误 : 缺少“;”(在“}”的前面)
+PolyBooleanView.cpp(1536): error C2146: 语法错误: 缺少“)”(在标识符“澶氳竟褰杩樻病鏈変换浣曞鐜�”的前面)
+PolyBooleanView.cpp(1536): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1536): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1538): error C2146: 语法错误: 缺少“)”(在标识符“璇风粰澶氳竟褰澧炲姞澶栫幆锛屽啀鎵ц鏈搷浣溿�”的前面)
+PolyBooleanView.cpp(1538): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1538): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1552): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1552): error C2146: 语法错误: 缺少“)”(在标识符“鎿嶄綔閿欒”的前面)
+PolyBooleanView.cpp(1552): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [114]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(1585): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1592): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1593): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1601): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1604): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1607): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1629): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1634): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1637): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+PolyBooleanView.cpp(1650): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1650): error C2146: 语法错误: 缺少“)”(在标识符“鐢ㄩ紶鏍囧彸閿粨鏉熺偣娣诲姞鎿嶄綔”的前面)
+PolyBooleanView.cpp(1650): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1656): error C2146: 语法错误: 缺少“)”(在标识符“澶氳竟褰杩樻病鏈変换浣曞鐜�”的前面)
+PolyBooleanView.cpp(1656): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1656): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1658): error C2146: 语法错误: 缺少“)”(在标识符“璇风粰澶氳竟褰澧炲姞澶栫幆锛屽啀鎵ц鏈搷浣溿�”的前面)
+PolyBooleanView.cpp(1658): error C2660: “CPolyBooleanView::mb_statusSetText”: 函数不接受 1 个参数
+PolyBooleanView.cpp(1658): error C2059: 语法错误:“)”
+PolyBooleanView.cpp(1672): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1672): error C2146: 语法错误: 缺少“)”(在标识符“鏃犳晥鎿嶄綔”的前面)
+PolyBooleanView.cpp(1672): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [42]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanView.cpp(1677): error C2001: 常量中有换行符
+PolyBooleanView.cpp(1677): error C2146: 语法错误: 缺少“)”(在标识符“鏃犳晥鎿嶄綔”的前面)
+PolyBooleanView.cpp(1677): error C2664: “CWnd::MessageBoxW”: 不能将参数 1 从“const char [57]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+  PolyBooleanDoc.cpp
+PolyBooleanDoc.cpp(99): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(104): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [8]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(105): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [8]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(120): error C2664: “CArchive::WriteString”: 不能将参数 1 从“const char [63]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(121): error C2664: “CArchive::WriteString”: 不能将参数 1 从“const char [17]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(125): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [13]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(126): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [16]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(129): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [17]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(131): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [24]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(133): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [14]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(136): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [14]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(151): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(165): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(201): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(206): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [8]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(207): error C2664: “CMFCRibbonComboBox::AddItem”: 不能将参数 1 从“const char [8]”转换为“LPCTSTR”
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(288): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [15]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(292): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [8]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(295): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [18]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(299): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [12]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(301): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [14]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(305): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [10]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(307): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [17]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(311): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [4]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(316): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(321): error C2664: “void ATL::CStringT<BaseType,StringTraits>::Format(const wchar_t *,...)”: 不能将参数 1 从“const char [3]”转换为“const wchar_t *”
+          with
+          [
+              BaseType=wchar_t,
+              StringTraits=StrTraitMFC<wchar_t>
+          ]
+          与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+PolyBooleanDoc.cpp(335): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(348): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(359): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(376): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(388): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+PolyBooleanDoc.cpp(395): error C2664: “std::basic_stringstream<_Elem,_Traits,_Alloc>::basic_stringstream(std::ios_base::openmode)”: 不能将参数 1 从“const wchar_t *”转换为“std::ios_base::openmode”
+          with
+          [
+              _Elem=char,
+              _Traits=std::char_traits<char>,
+              _Alloc=std::allocator<char>
+          ]
+          没有使该转换得以执行的上下文
+  PolyBoolean.cpp
+  MainFrm.cpp
+  CP_Triangle.cpp
+CP_Triangle.cpp(8): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  CP_Polygon.cpp
+CP_Polygon.cpp(8): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(13): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(38): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(94): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(111): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(114): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(117): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(135): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(143): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(151): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(153): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(163): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(189): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(211): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(221): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(229): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(248): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(250): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(253): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(266): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(269): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(272): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(282): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(290): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(297): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(309): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(313): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(316): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(354): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(357): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(361): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(387): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(398): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(415): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(418): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(435): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(447): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(453): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(456): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(469): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(473): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+CP_Polygon.cpp(476): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+========== 全部重新生成: 成功 0 个，失败 1 个，跳过 0 个 ==========
