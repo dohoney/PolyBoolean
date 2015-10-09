@@ -24,7 +24,7 @@
 #include <propkey.h>
 #include <sstream>
 #include <string>
-
+#include <ctime>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -122,13 +122,13 @@ void CPolyBooleanDoc::Serialize(CArchive& ar)
         SYSTEMTIME st;
         CString strDate,strTime;
         GetLocalTime(&st);
-        strDate.Format("%4d-%2d-%2d ",st.wYear,st.wMonth,st.wDay);
-        strTime.Format("%2d:%2d:%2d\r\n\r\n",st.wHour,st.wMinute,st.wSecond);
+        strDate.Format(_T("%4d-%2d-%2d "),st.wYear,st.wMonth,st.wDay);
+        strTime.Format(_T("%2d:%2d:%2d\r\n\r\n"),st.wHour,st.wMinute,st.wSecond);
         ar.WriteString(strDate.GetString());
         ar.WriteString(strTime.GetString());
-	    line.Format("Tolerance %g\r\n\r\n", m_tolerance);
+	    line.Format(_T("Tolerance %g\r\n\r\n"), m_tolerance);
         ar.WriteString(line.GetString());
-        line.Format("Coordinate %g %g %g\r\n\r\n", m_scale, m_translation.m_x, m_translation.m_y);
+        line.Format(_T("Coordinate %g %g %g\r\n\r\n"), m_scale, m_translation.m_x, m_translation.m_y);
         ar.WriteString(line.GetString());
         line.Format("A Polygon\r\n\r\n");
         ar.WriteString(line.GetString());
