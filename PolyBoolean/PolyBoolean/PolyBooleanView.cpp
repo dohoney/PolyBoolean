@@ -1,20 +1,20 @@
-// è¿™æ®µ MFC ç¤ºä¾‹æºä»£ç æ¼”ç¤ºå¦‚ä½•ä½¿ç”¨ MFC Microsoft Office Fluent ç”¨æˆ·ç•Œé¢ 
-// (â€œFluent UIâ€)ã€‚è¯¥ç¤ºä¾‹ä»…ä¾›å‚è€ƒï¼Œ
-// ç”¨ä»¥è¡¥å……ã€ŠMicrosoft åŸºç¡€ç±»å‚è€ƒã€‹å’Œ 
-// MFC C++ åº“è½¯ä»¶éšé™„çš„ç›¸å…³ç”µå­æ–‡æ¡£ã€‚  
-// å¤åˆ¶ã€ä½¿ç”¨æˆ–åˆ†å‘ Fluent UI çš„è®¸å¯æ¡æ¬¾æ˜¯å•ç‹¬æä¾›çš„ã€‚  
-// è‹¥è¦äº†è§£æœ‰å…³ Fluent UI è®¸å¯è®¡åˆ’çš„è¯¦ç»†ä¿¡æ¯ï¼Œè¯·è®¿é—® 
-// http://go.microsoft.com/fwlink/?LinkId=238214ã€‚
+// Õâ¶Î MFC Ê¾ÀıÔ´´úÂëÑİÊ¾ÈçºÎÊ¹ÓÃ MFC Microsoft Office Fluent ÓÃ»§½çÃæ 
+// (¡°Fluent UI¡±)¡£¸ÃÊ¾Àı½ö¹©²Î¿¼£¬
+// ÓÃÒÔ²¹³ä¡¶Microsoft »ù´¡Àà²Î¿¼¡·ºÍ 
+// MFC C++ ¿âÈí¼şËæ¸½µÄÏà¹Øµç×ÓÎÄµµ¡£  
+// ¸´ÖÆ¡¢Ê¹ÓÃ»ò·Ö·¢ Fluent UI µÄĞí¿ÉÌõ¿îÊÇµ¥¶ÀÌá¹©µÄ¡£  
+// ÈôÒªÁË½âÓĞ¹Ø Fluent UI Ğí¿É¼Æ»®µÄÏêÏ¸ĞÅÏ¢£¬Çë·ÃÎÊ 
+// http://go.microsoft.com/fwlink/?LinkId=238214¡£
 //
-// ç‰ˆæƒæ‰€æœ‰(C) Microsoft Corporation
-// ä¿ç•™æ‰€æœ‰æƒåˆ©ã€‚
+// °æÈ¨ËùÓĞ(C) Microsoft Corporation
+// ±£ÁôËùÓĞÈ¨Àû¡£
 
-// PolyBooleanView.cpp : CPolyBooleanView ç±»çš„å®ç°
+// PolyBooleanView.cpp : CPolyBooleanView ÀàµÄÊµÏÖ
 //
 
 #include "stdafx.h"
-// SHARED_HANDLERS å¯ä»¥åœ¨å®ç°é¢„è§ˆã€ç¼©ç•¥å›¾å’Œæœç´¢ç­›é€‰å™¨å¥æŸ„çš„
-// ATL é¡¹ç›®ä¸­è¿›è¡Œå®šä¹‰ï¼Œå¹¶å…è®¸ä¸è¯¥é¡¹ç›®å…±äº«æ–‡æ¡£ä»£ç ã€‚
+// SHARED_HANDLERS ¿ÉÒÔÔÚÊµÏÖÔ¤ÀÀ¡¢ËõÂÔÍ¼ºÍËÑË÷É¸Ñ¡Æ÷¾ä±úµÄ
+// ATL ÏîÄ¿ÖĞ½øĞĞ¶¨Òå£¬²¢ÔÊĞíÓë¸ÃÏîÄ¿¹²ÏíÎÄµµ´úÂë¡£
 #ifndef SHARED_HANDLERS
 #include "PolyBoolean.h"
 #endif
@@ -35,7 +35,7 @@
 IMPLEMENT_DYNCREATE(CPolyBooleanView, CView)
 
 BEGIN_MESSAGE_MAP(CPolyBooleanView, CView)
-	// æ ‡å‡†æ‰“å°å‘½ä»¤
+	// ±ê×¼´òÓ¡ÃüÁî
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CPolyBooleanView::OnFilePrintPreview)
@@ -76,11 +76,11 @@ BEGIN_MESSAGE_MAP(CPolyBooleanView, CView)
 	ON_COMMAND(ID_VIEW_POINT_ID, &CPolyBooleanView::OnViewPointId)
 END_MESSAGE_MAP()
 
-// CPolyBooleanView æ„é€ /ææ„
+// CPolyBooleanView ¹¹Ôì/Îö¹¹
 
 CPolyBooleanView::CPolyBooleanView()
 {
-	// TODO: åœ¨æ­¤å¤„æ·»åŠ æ„é€ ä»£ç 
+	// TODO: ÔÚ´Ë´¦Ìí¼Ó¹¹Ôì´úÂë
 
 }
 
@@ -90,13 +90,13 @@ CPolyBooleanView::~CPolyBooleanView()
 
 BOOL CPolyBooleanView::PreCreateWindow(CREATESTRUCT& cs)
 {
-	// TODO: åœ¨æ­¤å¤„é€šè¿‡ä¿®æ”¹
-	//  CREATESTRUCT cs æ¥ä¿®æ”¹çª—å£ç±»æˆ–æ ·å¼
+	// TODO: ÔÚ´Ë´¦Í¨¹ıĞŞ¸Ä
+	//  CREATESTRUCT cs À´ĞŞ¸Ä´°¿ÚÀà»òÑùÊ½
 
 	return CView::PreCreateWindow(cs);
 }
 
-// CPolyBooleanView ç»˜åˆ¶
+// CPolyBooleanView »æÖÆ
 
 void CPolyBooleanView::OnDraw(CDC* pDC)
 {
@@ -105,437 +105,437 @@ void CPolyBooleanView::OnDraw(CDC* pDC)
 	if (!pDoc)
 		return;
 
-	// TODO: åœ¨æ­¤å¤„ä¸ºæœ¬æœºæ•°æ®æ·»åŠ ç»˜åˆ¶ä»£ç 
-    CRect r;
-    GetClientRect(& r);
-    if (pDoc->m_flagShowTriangleFace)
-    {
-        CBrush brush(RGB(155, 155, 50));
-        CBrush* brushOld = (CBrush*)pDC->SelectObject(&brush);;
-        CPoint p[3];
-        p[0].x = 100;
-        p[0].y = 100;
-        p[1].x = 200;
-        p[1].y = 100;
-        p[2].x = 200;
-        p[2].y = 200;
-        CRgn rgn;
-        rgn.CreatePolygonRgn(p, 3, ALTERNATE); 
-        pDC->FillRgn(&rgn, &brush); 
-        pDC->SelectObject(brushOld);
-    } // if (pDoc->m_flagShowTriangleFace)ç»“æŸ
-    if (!pDoc->m_flagShowSelect)
-    {
-        if (pDoc->m_flagShowA)
-        {
-            gb_drawPolygonLoop(pDC, pDoc->m_a,
-                pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                255, 0, 0,
-                0, 255, 0,
-                3);
-            gb_drawPolygonPoint(pDC, pDoc->m_a,
-                pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                0, 0, 0,
-                3);
-            if (pDoc->m_flagShowPointID)
-                gb_drawPolygonPointID(pDC, pDoc->m_a,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    0, 0, 0);
-        } // ifç»“æŸ
-       if (pDoc->m_flagShowB)
-        {
-            gb_drawPolygonLoop(pDC, pDoc->m_b,
-                pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                255, 0, 255,
-                0, 0, 255,
-                3);
-            gb_drawPolygonPoint(pDC, pDoc->m_b,
-                pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                0, 0, 0,
-                3);
-            if (pDoc->m_flagShowPointID)
-                gb_drawPolygonPointID(pDC, pDoc->m_b,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    0, 0, 255);
-        } // ifç»“æŸ
-    } // if(!pDoc->m_flagShowSelect)ç»“æŸ: æ˜¾ç¤ºæ‰€æœ‰çš„åŸºæœ¬å†…å®¹
-   if (pDoc->m_flagSelect) // æ˜¾ç¤ºé€‰æ‹©é›†
-    {
-        switch(pDoc->m_flagSelectType)
-        {
-        case 1: // ç‚¹ã€‚
-            if (pDoc->m_flagSelectPolygon==0)
-                gb_drawPointGlobal(pDC, pDoc->m_a.m_pointArray[pDoc->m_flagSelectID],
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    50, 50, 50,
-                    6); // A
-            else gb_drawPointGlobal(pDC, pDoc->m_b.m_pointArray[pDoc->m_flagSelectID],
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    50, 50, 50,
-                    6); // B
-            break;
-    case 2: // ç¯ã€‚
-            if (pDoc->m_flagSelectPolygon==0)
-            {
-                if (pDoc->m_flagSelectID==0)
-                    gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        255, 100, 100,
-                        5); // å¤–ç¯
-                else
-                    gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        100, 255, 50,
-                        5); // å†…ç¯
-            } // A
-    else
-            {
-                if (pDoc->m_flagSelectID==0)
-                    gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        200, 100, 200,
-                        5); // å¤–ç¯
-                else
-                    gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        100, 50, 255,
-                        5); // å†…ç¯
-            } // B
-            break;
-    case 3: // åŒºåŸŸã€‚
-            int i, n;
-            if (pDoc->m_flagSelectPolygon==0)
-            {
-                n = pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray.size( );
-                for (i=0; i<n; i++)
-                if (i==0)
-                    gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        255, 100, 100,
-                        5); // å¤–ç¯
-                else
-                    gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        100, 255, 50,
-                        5); // å†…ç¯
-            } // A
-           else
-            {
-                n = pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray.size( );
-                for (i=0; i<n; i++)
-                if (i==0)
-                    gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        200, 100, 200,
-                        5); // å¤–ç¯
-                else
-                    gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
-                        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                        100, 50, 255,
-                        5); // å†…ç¯
-            } // B
-            break;
-        case 4: // å¤šè¾¹å½¢ã€‚
-            if (pDoc->m_flagSelectPolygon==0)
-            {
-                gb_drawPolygonLoop(pDC, pDoc->m_a,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    255, 100, 100,
-                    100, 255, 50,
-                    5);
-                gb_drawPolygonPoint(pDC, pDoc->m_a,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    50, 50, 50,
-                    6);
-            } // A
-           else
-            {
-                gb_drawPolygonLoop(pDC, pDoc->m_b,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    200, 100, 200,
-                    100, 50, 255,
-                    5);
-                gb_drawPolygonPoint(pDC, pDoc->m_b,
-                    pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-                    50, 50, 50,
-                    6);
-            } // B
-            break;
-        case 5: // å‰–åˆ†ä¸‰è§’å½¢ã€‚
-            break;
-        } // switchç»“æŸ
-    } // if(pDoc->m_flagSelect)ç»“æŸ
-    if (pDoc->m_flagAdd == 1) // å¤–ç¯
-    {
-        gb_drawPointArrayLine(pDC, pDoc->m_flagAddPointArray,
-            pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-            200, 0, 255,
-            5);
-        gb_drawPointArrayPoint(pDC, pDoc->m_flagAddPointArray,
-            pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-            0, 0, 0,
-            6);
-    } // if (pDoc->m_flagAdd == 1)ç»“æŸ
-    if (pDoc->m_flagAdd == 2) // å†…ç¯
-    {
-        gb_drawPointArrayLine(pDC, pDoc->m_flagAddPointArray,
-            pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-            0, 200, 255,
-            5);
-        gb_drawPointArrayPoint(pDC, pDoc->m_flagAddPointArray,
-            pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
-            0, 0, 0,
-            6);
-    } // if (pDoc->m_flagAdd == 2)ç»“æŸ
+	// TODO: ÔÚ´Ë´¦Îª±¾»úÊı¾İÌí¼Ó»æÖÆ´úÂë
+	CRect r;
+	GetClientRect(&r);
+	if (pDoc->m_flagShowTriangleFace)
+	{
+		CBrush brush(RGB(155, 155, 50));
+		CBrush* brushOld = (CBrush*)pDC->SelectObject(&brush);;
+		CPoint p[3];
+		p[0].x = 100;
+		p[0].y = 100;
+		p[1].x = 200;
+		p[1].y = 100;
+		p[2].x = 200;
+		p[2].y = 200;
+		CRgn rgn;
+		rgn.CreatePolygonRgn(p, 3, ALTERNATE);
+		pDC->FillRgn(&rgn, &brush);
+		pDC->SelectObject(brushOld);
+	} // if (pDoc->m_flagShowTriangleFace)½áÊø
+	if (!pDoc->m_flagShowSelect)
+	{
+		if (pDoc->m_flagShowA)
+		{
+			gb_drawPolygonLoop(pDC, pDoc->m_a,
+				pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+				255, 0, 0,
+				0, 255, 0,
+				3);
+			gb_drawPolygonPoint(pDC, pDoc->m_a,
+				pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+				0, 0, 0,
+				3);
+			if (pDoc->m_flagShowPointID)
+				gb_drawPolygonPointID(pDC, pDoc->m_a,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					0, 0, 0);
+		} // if½áÊø
+		if (pDoc->m_flagShowB)
+		{
+			gb_drawPolygonLoop(pDC, pDoc->m_b,
+				pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+				255, 0, 255,
+				0, 0, 255,
+				3);
+			gb_drawPolygonPoint(pDC, pDoc->m_b,
+				pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+				0, 0, 0,
+				3);
+			if (pDoc->m_flagShowPointID)
+				gb_drawPolygonPointID(pDC, pDoc->m_b,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					0, 0, 255);
+		} // if½áÊø
+	} // if(!pDoc->m_flagShowSelect)½áÊø: ÏÔÊ¾ËùÓĞµÄ»ù±¾ÄÚÈİ
+	if (pDoc->m_flagSelect) // ÏÔÊ¾Ñ¡Ôñ¼¯
+	{
+		switch (pDoc->m_flagSelectType)
+		{
+		case 1: // µã¡£
+			if (pDoc->m_flagSelectPolygon == 0)
+				gb_drawPointGlobal(pDC, pDoc->m_a.m_pointArray[pDoc->m_flagSelectID],
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					50, 50, 50,
+					6); // A
+			else gb_drawPointGlobal(pDC, pDoc->m_b.m_pointArray[pDoc->m_flagSelectID],
+				pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+				50, 50, 50,
+				6); // B
+			break;
+		case 2: // »·¡£
+			if (pDoc->m_flagSelectPolygon == 0)
+			{
+				if (pDoc->m_flagSelectID == 0)
+					gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
+						pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+						255, 100, 100,
+						5); // Íâ»·
+				else
+					gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
+						pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+						100, 255, 50,
+						5); // ÄÚ»·
+			} // A
+			else
+			{
+				if (pDoc->m_flagSelectID == 0)
+					gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
+						pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+						200, 100, 200,
+						5); // Íâ»·
+				else
+					gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[pDoc->m_flagSelectID],
+						pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+						100, 50, 255,
+						5); // ÄÚ»·
+			} // B
+			break;
+		case 3: // ÇøÓò¡£
+			int i, n;
+			if (pDoc->m_flagSelectPolygon == 0)
+			{
+				n = pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray.size();
+				for (i = 0; i<n; i++)
+					if (i == 0)
+						gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
+							pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+							255, 100, 100,
+							5); // Íâ»·
+					else
+						gb_drawLoop(pDC, pDoc->m_a.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
+							pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+							100, 255, 50,
+							5); // ÄÚ»·
+			} // A
+			else
+			{
+				n = pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray.size();
+				for (i = 0; i<n; i++)
+					if (i == 0)
+						gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
+							pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+							200, 100, 200,
+							5); // Íâ»·
+					else
+						gb_drawLoop(pDC, pDoc->m_b.m_regionArray[pDoc->m_flagSelectRegion].m_loopArray[i],
+							pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+							100, 50, 255,
+							5); // ÄÚ»·
+			} // B
+			break;
+		case 4: // ¶à±ßĞÎ¡£
+			if (pDoc->m_flagSelectPolygon == 0)
+			{
+				gb_drawPolygonLoop(pDC, pDoc->m_a,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					255, 100, 100,
+					100, 255, 50,
+					5);
+				gb_drawPolygonPoint(pDC, pDoc->m_a,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					50, 50, 50,
+					6);
+			} // A
+			else
+			{
+				gb_drawPolygonLoop(pDC, pDoc->m_b,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					200, 100, 200,
+					100, 50, 255,
+					5);
+				gb_drawPolygonPoint(pDC, pDoc->m_b,
+					pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+					50, 50, 50,
+					6);
+			} // B
+			break;
+		case 5: // ÆÊ·ÖÈı½ÇĞÎ¡£
+			break;
+		} // switch½áÊø
+	} // if(pDoc->m_flagSelect)½áÊø
+	if (pDoc->m_flagAdd == 1) // Íâ»·
+	{
+		gb_drawPointArrayLine(pDC, pDoc->m_flagAddPointArray,
+			pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+			200, 0, 255,
+			5);
+		gb_drawPointArrayPoint(pDC, pDoc->m_flagAddPointArray,
+			pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+			0, 0, 0,
+			6);
+	} // if (pDoc->m_flagAdd == 1)½áÊø
+	if (pDoc->m_flagAdd == 2) // ÄÚ»·
+	{
+		gb_drawPointArrayLine(pDC, pDoc->m_flagAddPointArray,
+			pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+			0, 200, 255,
+			5);
+		gb_drawPointArrayPoint(pDC, pDoc->m_flagAddPointArray,
+			pDoc->m_scale, pDoc->m_translation, r.right, r.bottom,
+			0, 0, 0,
+			6);
+	} // if (pDoc->m_flagAdd == 2)½áÊø
 
 }
 
-void gb_drawLoop(CDC* pDC, CP_Loop& p, 
-                 double scale, CP_Point translation, int screenX, int screenY, 
-                 int r, int g, int b, int size)
+void gb_drawLoop(CDC* pDC, CP_Loop& p,
+	double scale, CP_Point translation, int screenX, int screenY,
+	int r, int g, int b, int size)
 {
-    int n = p.m_pointIDArray.size( );
-    if (n<=0)
-        return;
-    CPen pen(0, size, RGB(r, g, b));
-    CPen * penOld = (CPen *) pDC->SelectObject(&pen);
-    int i, k;
-    i = p.m_pointIDArray[n-1];
-    CP_Point pg = p.m_polygon->m_pointArray[i];
-    CP_Point ps;
-    gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
-    pDC->MoveTo((int)(ps.m_x+0.5), (int)(ps.m_y+0.5));
+	int n = p.m_pointIDArray.size();
+	if (n <= 0)
+		return;
+	CPen pen(0, size, RGB(r, g, b));
+	CPen * penOld = (CPen *)pDC->SelectObject(&pen);
+	int i, k;
+	i = p.m_pointIDArray[n - 1];
+	CP_Point pg = p.m_polygon->m_pointArray[i];
+	CP_Point ps;
+	gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
+	pDC->MoveTo((int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5));
 
- 
-    for (k=0; k<n; k++)
-    {
-        i = p.m_pointIDArray[k];
-        pg = p.m_polygon->m_pointArray[i];
-        gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
-        pDC->LineTo((int)(ps.m_x+0.5), (int)(ps.m_y+0.5));
-    } //forç»“æŸ
-    pDC->SelectObject(penOld);
-} // å‡½æ•°gb_drawPolygonLoopç»“æŸ
 
- 
+	for (k = 0; k<n; k++)
+	{
+		i = p.m_pointIDArray[k];
+		pg = p.m_polygon->m_pointArray[i];
+		gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
+		pDC->LineTo((int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5));
+	} //for½áÊø
+	pDC->SelectObject(penOld);
+} // º¯Êıgb_drawPolygonLoop½áÊø
+
+
 void gb_drawPointArrayLine(CDC* pDC, VT_PointArray& pa,
-        double scale, CP_Point translation, int screenX, int screenY,
-        int r, int g, int b, int size)
+	double scale, CP_Point translation, int screenX, int screenY,
+	int r, int g, int b, int size)
 {
-    int n = pa.size( );
-    if (n<=0)
-        return;
-    CPen pen(0, size, RGB(r, g, b));
-    CPen * penOld = (CPen *) pDC->SelectObject(&pen);
-    int i;
-    CP_Point pg = pa[0];
-    CP_Point ps;
-    gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
+	int n = pa.size();
+	if (n <= 0)
+		return;
+	CPen pen(0, size, RGB(r, g, b));
+	CPen * penOld = (CPen *)pDC->SelectObject(&pen);
+	int i;
+	CP_Point pg = pa[0];
+	CP_Point ps;
+	gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
 
- 
-    pDC->MoveTo((int)(ps.m_x+0.5), (int)(ps.m_y+0.5));
-    for (i=0; i<n; i++)
-    {
-        pg = pa[i];
-        gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
-        pDC->LineTo((int)(ps.m_x+0.5), (int)(ps.m_y+0.5));
-    } //forç»“æŸ
-    pDC->SelectObject(penOld);
-} // å‡½æ•°gb_drawPointArrayLineç»“æŸ
 
- 
+	pDC->MoveTo((int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5));
+	for (i = 0; i<n; i++)
+	{
+		pg = pa[i];
+		gb_pointConvertFromGlobalToScreen(ps, pg, scale, translation, screenX, screenY);
+		pDC->LineTo((int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5));
+	} //for½áÊø
+	pDC->SelectObject(penOld);
+} // º¯Êıgb_drawPointArrayLine½áÊø
+
+
 void gb_drawPointArrayPoint(CDC* pDC, VT_PointArray& pa,
-        double scale, CP_Point translation, int screenX, int screenY,
-        int r, int g, int b, int size)
+	double scale, CP_Point translation, int screenX, int screenY,
+	int r, int g, int b, int size)
 {
-    int n = pa.size( );
-    int i;
-    for (i=0; i<n; i++)
-    {
-        gb_drawPointGlobal(pDC, pa[i], scale, translation, screenX, screenY, r, g, b, size);
-    } // forç»“æŸ
-} // å‡½æ•°gb_drawPointArrayPointç»“æŸ
+	int n = pa.size();
+	int i;
+	for (i = 0; i<n; i++)
+	{
+		gb_drawPointGlobal(pDC, pa[i], scale, translation, screenX, screenY, r, g, b, size);
+	} // for½áÊø
+} // º¯Êıgb_drawPointArrayPoint½áÊø
 
- 
+
 void gb_drawPointGlobal(CDC* pDC, CP_Point pointGlobal, double scale, CP_Point translation, int screenX, int screenY, int r, int g, int b, int size)
 {
-    CP_Point ps;
-    gb_pointConvertFromGlobalToScreen(ps, pointGlobal, scale, translation,screenX, screenY);
-    gb_drawPointScreen(pDC, (int)(ps.m_x+0.5), (int)(ps.m_y+0.5), r, g, b, size);
-} // å‡½æ•°gb_drawPointScreenç»“æŸ
+	CP_Point ps;
+	gb_pointConvertFromGlobalToScreen(ps, pointGlobal, scale, translation, screenX, screenY);
+	gb_drawPointScreen(pDC, (int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5), r, g, b, size);
+} // º¯Êıgb_drawPointScreen½áÊø
 
- 
+
 void gb_drawPointScreen(CDC* pDC, int x, int y, int r, int g, int b, int size)
 {
-    CBrush brush(RGB(r, g, b));
-    CBrush* brushOld = (CBrush*)pDC->SelectObject(&brush);;
-    // ç»˜åˆ¶æ ¼å­
-    CRect rect(x - size, y - size, x + size, y + size);
-    pDC->Ellipse(&rect);
-    pDC->SelectObject(brushOld);
-} // å‡½æ•°gb_drawPointScreenç»“æŸ
+	CBrush brush(RGB(r, g, b));
+	CBrush* brushOld = (CBrush*)pDC->SelectObject(&brush);;
+	// »æÖÆ¸ñ×Ó
+	CRect rect(x - size, y - size, x + size, y + size);
+	pDC->Ellipse(&rect);
+	pDC->SelectObject(brushOld);
+} // º¯Êıgb_drawPointScreen½áÊø
 
- 
+
 void gb_drawPolygonLoop(CDC* pDC, CP_Polygon& p,
-                        double scale, CP_Point translation, int screenX, int screenY,
-                        int outR, int outG, int outB, 
-                        int inR,  int inG,  int inB, 
-                        int size)
+	double scale, CP_Point translation, int screenX, int screenY,
+	int outR, int outG, int outB,
+	int inR, int inG, int inB,
+	int size)
 {
-    unsigned int i, k;
-    for (i=0; i<p.m_regionArray.size( ); i++)
-    {
-        for (k=0; k<p.m_regionArray[i].m_loopArray.size( ); k++)
-        {
-            if (k==0)
-                gb_drawLoop(pDC, p.m_regionArray[i].m_loopArray[k], 
-                            scale, translation,screenX, screenY, 
-                            outR, outG, outB,size);
-            else
-                gb_drawLoop(pDC, p.m_regionArray[i].m_loopArray[k], 
-                            scale, translation,screenX, screenY, 
-                            inR, inG, inB,size);
-        } // å†…éƒ¨forç»“æŸ
-    } // å¤–éƒ¨forç»“æŸ
-} // å‡½æ•°gb_drawPolygonLoopç»“æŸ
+	unsigned int i, k;
+	for (i = 0; i<p.m_regionArray.size(); i++)
+	{
+		for (k = 0; k<p.m_regionArray[i].m_loopArray.size(); k++)
+		{
+			if (k == 0)
+				gb_drawLoop(pDC, p.m_regionArray[i].m_loopArray[k],
+					scale, translation, screenX, screenY,
+					outR, outG, outB, size);
+			else
+				gb_drawLoop(pDC, p.m_regionArray[i].m_loopArray[k],
+					scale, translation, screenX, screenY,
+					inR, inG, inB, size);
+		} // ÄÚ²¿for½áÊø
+	} // Íâ²¿for½áÊø
+} // º¯Êıgb_drawPolygonLoop½áÊø
 
- 
+
 void gb_drawPolygonPoint(CDC* pDC, CP_Polygon& p, double scale, CP_Point translation, int screenX, int screenY, int r, int g, int b, int size)
 {
-    int n = p.m_pointArray.size( );
-    int i;
-    for (i=0; i<n; i++)
-    {
-        gb_drawPointGlobal(pDC, p.m_pointArray[i], scale, translation, screenX, screenY, r, g, b, size);
-    } // forç»“æŸ
-} // å‡½æ•°gb_drawPolygonPointç»“æŸ
+	int n = p.m_pointArray.size();
+	int i;
+	for (i = 0; i<n; i++)
+	{
+		gb_drawPointGlobal(pDC, p.m_pointArray[i], scale, translation, screenX, screenY, r, g, b, size);
+	} // for½áÊø
+} // º¯Êıgb_drawPolygonPoint½áÊø
 
- 
+
 void gb_drawPolygonPointID(CDC* pDC, CP_Polygon& p,
-            double scale, CP_Point translation, int screenX, int screenY,
-            int r, int g, int b)
+	double scale, CP_Point translation, int screenX, int screenY,
+	int r, int g, int b)
 {
-    COLORREF cOld = pDC->SetTextColor(RGB(r, g, b));
-    int nr = p.m_regionArray.size( );
-    int nL, nLv, ir, iL, iLv, v;
-    CP_Point ps;
-    char buffer[100];
-    for (ir=0; ir<nr; ir++)
-    {
-        nL = p.m_regionArray[ir].m_loopArray.size( );
+	COLORREF cOld = pDC->SetTextColor(RGB(r, g, b));
+	int nr = p.m_regionArray.size();
+	int nL, nLv, ir, iL, iLv, v;
+	CP_Point ps;
+	char buffer[100];
+	for (ir = 0; ir<nr; ir++)
+	{
+		nL = p.m_regionArray[ir].m_loopArray.size();
 
- 
-       for (iL=0; iL<nL; iL++)
-        {
-            nLv =  p.m_regionArray[ir].m_loopArray[iL].m_pointIDArray.size( );
-            for (iLv=0; iLv<nLv; iLv++)
-            {
-                v = p.m_regionArray[ir].m_loopArray[iL].m_pointIDArray[iLv];
-                gb_pointConvertFromGlobalToScreen(ps, p.m_pointArray[v], 
-                    scale, translation,screenX, screenY);
-                sprintf_s(buffer, 100, "[%1d]R%1dL%1dV%1d", v, ir, iL, iLv);
-                pDC->TextOutA((int)(ps.m_x+0.5), (int)(ps.m_y+0.5), buffer);
-            } // for(iLv)ç»“æŸ
-        } // for(iL)ç»“æŸ
-    } // for(ir)ç»“æŸ
-    pDC->SetTextColor(cOld);
-} // å‡½æ•°gb_drawPolygonPointIDç»“æŸ
+
+		for (iL = 0; iL<nL; iL++)
+		{
+			nLv = p.m_regionArray[ir].m_loopArray[iL].m_pointIDArray.size();
+			for (iLv = 0; iLv<nLv; iLv++)
+			{
+				v = p.m_regionArray[ir].m_loopArray[iL].m_pointIDArray[iLv];
+				gb_pointConvertFromGlobalToScreen(ps, p.m_pointArray[v],
+					scale, translation, screenX, screenY);
+				sprintf_s(buffer, 100, "[%1d]R%1dL%1dV%1d", v, ir, iL, iLv);
+				pDC->TextOutA((int)(ps.m_x + 0.5), (int)(ps.m_y + 0.5), (CString)buffer);
+			} // for(iLv)½áÊø
+		} // for(iL)½áÊø
+	} // for(ir)½áÊø
+	pDC->SetTextColor(cOld);
+} // º¯Êıgb_drawPolygonPointID½áÊø
 
 void CPolyBooleanView::OnRButtonUp(UINT /* nFlags */, CPoint point)
 {
 	ClientToScreen(&point);
-//	OnContextMenu(this, point);
+	//	OnContextMenu(this, point);
 	CPolyBooleanDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
 	if (!pDoc)
 		return;
-    if (pDoc->m_flagAdd == 3)
-    {
-        pDoc->m_flagAdd = 0;
-        mb_statusSetText("ç‚¹æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-        return;
-    } // ifç»“æŸ
+	if (pDoc->m_flagAdd == 3)
+	{
+		pDoc->m_flagAdd = 0;
+		mb_statusSetText("µãÌí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+		return;
+	} // if½áÊø
 
- 
-    if ((pDoc->m_flagAdd == 1) || (pDoc->m_flagAdd == 2)) // ç¯
-    {
-        int n = pDoc->m_flagAddPointArray.size( );
-        if (n<=0)
-        {
-            pDoc->m_flagAdd = 0;
-            mb_statusSetText("ç¯æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-            return;
-        } // ifç»“æŸ
 
- 
-       if (n<3)
-        {
-            if (MessageBox("æ„æˆç¯çš„ç‚¹ä¸èƒ½å°‘äº3ä¸ªï¼Œæ˜¯å¦ç»§ç»­è¾“å…¥? é€‰æ˜¯åˆ™ç»§ç»­ï¼Œå¦åˆ™æ”¾å¼ƒå‰é¢è¾“å…¥çš„ç‚¹ã€‚", "æ“ä½œç¡®è®¤", MB_ICONQUESTION|MB_YESNO)==IDYES)
-                return;
-            if (pDoc->m_flagAdd == 1)
-                 mb_statusSetText("å¤–ç¯ç‚¹æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-            else mb_statusSetText("å†…ç¯ç‚¹æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-            pDoc->m_flagAdd = 0;
-            pDoc->m_flagAddPointArray.clear( );
-            return;
-        } // ifç»“æŸ
+	if ((pDoc->m_flagAdd == 1) || (pDoc->m_flagAdd == 2)) // »·
+	{
+		int n = pDoc->m_flagAddPointArray.size();
+		if (n <= 0)
+		{
+			pDoc->m_flagAdd = 0;
+			mb_statusSetText("»·Ìí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+			return;
+		} // if½áÊø
 
- 
-       int i, k;
-        CP_Polygon* pn;
-        if (pDoc->m_flagAddIDPolygon==0)
-             pn= &(pDoc->m_a);
-        else pn= &(pDoc->m_b);
-        int nv = pn->m_pointArray.size( );
-        pn->m_pointArray.resize(nv+n);
-        for (i=0, k=nv; i<n; i++, k++)
-        {
-            pn->m_pointArray[k].m_x = pDoc->m_flagAddPointArray[i].m_x;
-            pn->m_pointArray[k].m_y = pDoc->m_flagAddPointArray[i].m_y;
-        } // forç»“æŸ
 
- 
-       if (pDoc->m_flagAdd == 1)
-        {
-            pDoc->m_flagAddIDLoop=0;
-            pDoc->m_flagAddIDRegion=pn->m_regionArray.size( );
-            pn->m_regionArray.resize(pDoc->m_flagAddIDRegion+1);
-            pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.resize(1);
-            pn->m_regionArray[pDoc->m_flagAddIDRegion].m_polygon=pn;
-            pn->m_regionArray[pDoc->m_flagAddIDRegion].m_regionIDinPolygon = pDoc->m_flagAddIDRegion;
-        }
-        else
-        {
-            pDoc->m_flagAddIDLoop= pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( );
-            pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.resize(pDoc->m_flagAddIDLoop+1);
-        } // if/elseç»“æŸ
+		if (n<3)
+		{
+			if (MessageBox(LPCTSTR("¹¹³É»·µÄµã²»ÄÜÉÙÓÚ3¸ö£¬ÊÇ·ñ¼ÌĞøÊäÈë? Ñ¡ÊÇÔò¼ÌĞø£¬·ñÔò·ÅÆúÇ°ÃæÊäÈëµÄµã¡£"), LPCTSTR("²Ù×÷È·ÈÏ"), MB_ICONQUESTION | MB_YESNO) == IDYES)
+				return;
+			if (pDoc->m_flagAdd == 1)
+				mb_statusSetText("Íâ»·µãÌí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+			else mb_statusSetText("ÄÚ»·µãÌí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+			pDoc->m_flagAdd = 0;
+			pDoc->m_flagAddPointArray.clear();
+			return;
+		} // if½áÊø
 
- 
-        pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_polygon = pn;
 
-        pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_regionIDinPolygon = pDoc->m_flagAddIDRegion;
+		int i, k;
+		CP_Polygon* pn;
+		if (pDoc->m_flagAddIDPolygon == 0)
+			pn = &(pDoc->m_a);
+		else pn = &(pDoc->m_b);
+		int nv = pn->m_pointArray.size();
+		pn->m_pointArray.resize(nv + n);
+		for (i = 0, k = nv; i<n; i++, k++)
+		{
+			pn->m_pointArray[k].m_x = pDoc->m_flagAddPointArray[i].m_x;
+			pn->m_pointArray[k].m_y = pDoc->m_flagAddPointArray[i].m_y;
+		} // for½áÊø
 
-        pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_loopIDinRegion = pDoc->m_flagAddIDLoop;
 
-        pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.resize(n);
+		if (pDoc->m_flagAdd == 1)
+		{
+			pDoc->m_flagAddIDLoop = 0;
+			pDoc->m_flagAddIDRegion = pn->m_regionArray.size();
+			pn->m_regionArray.resize(pDoc->m_flagAddIDRegion + 1);
+			pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.resize(1);
+			pn->m_regionArray[pDoc->m_flagAddIDRegion].m_polygon = pn;
+			pn->m_regionArray[pDoc->m_flagAddIDRegion].m_regionIDinPolygon = pDoc->m_flagAddIDRegion;
+		}
+		else
+		{
+			pDoc->m_flagAddIDLoop = pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size();
+			pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.resize(pDoc->m_flagAddIDLoop + 1);
+		} // if/else½áÊø
 
-        for (i=0, k= nv; i<n; i++, k++)
-        {
-            pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray[i] = k;
-        } // forç»“æŸ
 
- 
-       if (pDoc->m_flagAdd == 1)
-             mb_statusSetText("å¤–ç¯ç‚¹æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-        else mb_statusSetText("å†…ç¯ç‚¹æ·»åŠ æ“ä½œç»“æŸã€‚", "è¯·ç»§ç»­å…¶ä»–æ“ä½œ");
-        pDoc->m_flagAdd = 0;
-        pDoc->m_flagAddPointArray.clear( );
-        Invalidate( );
-        return;
-    } // å¤–ifç»“æŸ
+		pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_polygon = pn;
+
+		pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_regionIDinPolygon = pDoc->m_flagAddIDRegion;
+
+		pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_loopIDinRegion = pDoc->m_flagAddIDLoop;
+
+		pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.resize(n);
+
+		for (i = 0, k = nv; i<n; i++, k++)
+		{
+			pn->m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray[i] = k;
+		} // for½áÊø
+
+
+		if (pDoc->m_flagAdd == 1)
+			mb_statusSetText("Íâ»·µãÌí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+		else mb_statusSetText("ÄÚ»·µãÌí¼Ó²Ù×÷½áÊø¡£", "Çë¼ÌĞøÆäËû²Ù×÷");
+		pDoc->m_flagAdd = 0;
+		pDoc->m_flagAddPointArray.clear();
+		Invalidate();
+		return;
+	} // Íâif½áÊø
 }
 
-// CPolyBooleanView æ‰“å°
+// CPolyBooleanView ´òÓ¡
 
 
 void CPolyBooleanView::OnFilePrintPreview()
@@ -547,18 +547,18 @@ void CPolyBooleanView::OnFilePrintPreview()
 
 BOOL CPolyBooleanView::OnPreparePrinting(CPrintInfo* pInfo)
 {
-	// é»˜è®¤å‡†å¤‡
+	// Ä¬ÈÏ×¼±¸
 	return DoPreparePrinting(pInfo);
 }
 
 void CPolyBooleanView::OnBeginPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
-	// TODO: æ·»åŠ é¢å¤–çš„æ‰“å°å‰è¿›è¡Œçš„åˆå§‹åŒ–è¿‡ç¨‹
+	// TODO: Ìí¼Ó¶îÍâµÄ´òÓ¡Ç°½øĞĞµÄ³õÊ¼»¯¹ı³Ì
 }
 
 void CPolyBooleanView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
-	// TODO: æ·»åŠ æ‰“å°åè¿›è¡Œçš„æ¸…ç†è¿‡ç¨‹
+	// TODO: Ìí¼Ó´òÓ¡ºó½øĞĞµÄÇåÀí¹ı³Ì
 }
 
 //void CPolyBooleanView::OnRButtonUp(UINT /* nFlags */, CPoint point)
@@ -575,7 +575,7 @@ void CPolyBooleanView::OnContextMenu(CWnd* /* pWnd */, CPoint point)
 }
 
 
-// CPolyBooleanView è¯Šæ–­
+// CPolyBooleanView Õï¶Ï
 
 #ifdef _DEBUG
 void CPolyBooleanView::AssertValid() const
@@ -588,7 +588,7 @@ void CPolyBooleanView::Dump(CDumpContext& dc) const
 	CView::Dump(dc);
 }
 
-CPolyBooleanDoc* CPolyBooleanView::GetDocument() const // éè°ƒè¯•ç‰ˆæœ¬æ˜¯å†…è”çš„
+CPolyBooleanDoc* CPolyBooleanView::GetDocument() const // ·Çµ÷ÊÔ°æ±¾ÊÇÄÚÁªµÄ
 {
 	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CPolyBooleanDoc)));
 	return (CPolyBooleanDoc*)m_pDocument;
@@ -598,1459 +598,1459 @@ CPolyBooleanDoc* CPolyBooleanView::GetDocument() const // éè°ƒè¯•ç‰ˆæœ¬æ˜¯å†…è
 
 void  CPolyBooleanView::mb_statusSetText(char* s1, char* s2)
 {
-    CRect r;
-    // Viewä¸­è·å–MainFrameæŒ‡é’ˆ
-    CMainFrame *pMainFrame=(CMainFrame *)AfxGetApp()->m_pMainWnd;
-    //è·å–çŠ¶æ€æ æŒ‡é’ˆ
-    CMFCRibbonStatusBar *statusBar=
-        (CMFCRibbonStatusBar *)pMainFrame->GetDescendantWindow(AFX_IDW_STATUS_BAR);
-    //è·å–RibbonStatusBarä¸Šçš„å…ƒç´ 
-    CMFCRibbonLabel *locLabel;
-    if (s1!=NULL)
-    {
-        locLabel=(CMFCRibbonLabel *)statusBar->GetElement(0);
-        if (locLabel!=NULL)
-        {
-            r = locLabel->GetRect( );
-            if (r.right-r.left<300)
-                r.right+=300;
-            locLabel->SetRect(&r);
-            locLabel->SetText(s1);
-        } // ifç»“æŸ
-    } // å¤–ifç»“æŸ
-	if (s2!=NULL)
-    {
-        locLabel=(CMFCRibbonLabel *)statusBar->GetExElement(0);
-        if (locLabel!=NULL)
-        {
-            r = locLabel->GetRect( );
-            if (r.right-r.left<300)
-                r.left-=300;
-            locLabel->SetRect(&r);
-            locLabel->SetText(s2);
-        } // ifç»“æŸ
-    } // å¤–ifç»“æŸ
-    statusBar->Invalidate( );
-} // ç±»CPolyBooleanViewçš„æˆå‘˜å‡½æ•°mb_statusSetTextç»“æŸ
+	CRect r;
+	// ViewÖĞ»ñÈ¡MainFrameÖ¸Õë
+	CMainFrame *pMainFrame = (CMainFrame *)AfxGetApp()->m_pMainWnd;
+	//»ñÈ¡×´Ì¬À¸Ö¸Õë
+	CMFCRibbonStatusBar *statusBar =
+		(CMFCRibbonStatusBar *)pMainFrame->GetDescendantWindow(AFX_IDW_STATUS_BAR);
+	//»ñÈ¡RibbonStatusBarÉÏµÄÔªËØ
+	CMFCRibbonLabel *locLabel;
+	if (s1 != NULL)
+	{
+		locLabel = (CMFCRibbonLabel *)statusBar->GetElement(0);
+		if (locLabel != NULL)
+		{
+			r = locLabel->GetRect();
+			if (r.right - r.left<300)
+				r.right += 300;
+			locLabel->SetRect(&r);
+			locLabel->SetText((LPCTSTR)s1);
+		} // if½áÊø
+	} // Íâif½áÊø
+	if (s2 != NULL)
+	{
+		locLabel = (CMFCRibbonLabel *)statusBar->GetExElement(0);
+		if (locLabel != NULL)
+		{
+			r = locLabel->GetRect();
+			if (r.right - r.left<300)
+				r.left -= 300;
+			locLabel->SetRect(&r);
+			locLabel->SetText((LPCTSTR)s2);
+		} // if½áÊø
+	} // Íâif½áÊø
+	statusBar->Invalidate();
+} // ÀàCPolyBooleanViewµÄ³ÉÔ±º¯Êımb_statusSetText½áÊø
 
 
 
 
 
-//// CPolyBooleanView æ¶ˆæ¯å¤„ç†ç¨‹åº
-//void CPolyBooleanView::OnUpdateComboAorb(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar();
-//    if (robbon_bar==NULL)
-//        return;
-//    CMFCRibbonComboBox* pbox = (CMFCRibbonComboBox*)robbon_bar->FindByID(ID_COMBO_AorB); // è·å–ç¼–è¾‘æ¡†å¥æŸ„
-//    if (pbox==NULL)
-//        return;
-//    pbox->AddItem("å¤šè¾¹å½¢A");
-//    pbox->AddItem("å¤šè¾¹å½¢B");
-//}
-//
-// 
-//void CPolyBooleanView::OnComboAorb()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar();
-//    if (robbon_bar==NULL)
-//        return;
-//    CMFCRibbonComboBox* pbox = (CMFCRibbonComboBox*)robbon_bar->FindByID(ID_COMBO_AorB); // è·å–ç¼–è¾‘æ¡†å¥æŸ„
-//
-// 
-//    if (pbox==NULL)
-//        return;
-//    pbox->AddItem("å¤šè¾¹å½¢A");
-//    pbox->AddItem("å¤šè¾¹å½¢B");
-//    int i = pbox->GetCurSel( );
-//    pbox->SelectItem(i);
-//    if (i==0)
-//        pDoc->m_flagBuildA = true;
-//    else pDoc->m_flagBuildA = false;
-//    Invalidate( );
-//}
-//
-// 
-//void CPolyBooleanView::OnEdgeNumber()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    CString string;
-//    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar(); //è·å–Ribbon bar å¥æŸ„
-//    if (robbon_bar==NULL)
-//        return;
-//
-// 
-//    CMFCRibbonEdit* slider = (CMFCRibbonEdit*)robbon_bar->FindByID(ID_EDGE_NUMBER); // è·å–ç¼–è¾‘æ¡†å¥æŸ„
-//    if (slider==NULL)
-//        return;
-//    string= slider->GetEditText(); // è·å–æ•°å­—
-//    int i = atoi(string);
-//    if (i<3)
-//        i = 3;
-//    if (i>10000)
-//        i=10000;
-//    pDoc->m_edgeNumber = i;
-//    string.Format("%d", i);
-//    slider->SetEditText(string);
-//    Invalidate( );
-//}
-//
-// 
-//void CPolyBooleanView::OnTolerance()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    CString string;
-//    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar(); //è·å–Ribbon bar å¥æŸ„
-//    if (robbon_bar==NULL)
-//        return;
-//
-// 
-//    CMFCRibbonEdit* slider = (CMFCRibbonEdit*)robbon_bar->FindByID(ID_TOLERANCE); // è·å–ç¼–è¾‘æ¡†å¥æŸ„
-//    if (slider==NULL)
-//        return;
-//    string= slider->GetEditText(); // è·å–æ•°å­—
-//    double d = atof(string);
-//    if (d<=0.0)
-//        d = 1e-6;
-//    pDoc->m_tolerance = d;
-//    string.Format("%g", pDoc->m_tolerance);
-//    slider->SetEditText(string);
-//    Invalidate( );
-//}
-//
-// 
-//void CPolyBooleanView::OnNewRightOutloop()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    CRect r;
-//    GetClientRect(& r);
-//    double dr = (r.right<r.bottom ? r.right : r.bottom);
-//    dr /=3;
-//    if (pDoc->m_flagBuildA)
-//         gb_polygonNewOutLoopRegular(pDoc->m_a, pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//    else gb_polygonNewOutLoopRegular(pDoc->m_b, pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//    Invalidate( );
-//    char s[100];
-//    sprintf_s(s, 100, "æ–°å¤–ç¯æ˜¯æ­£%1dè¾¹å½¢", pDoc->m_edgeNumber);
-//    if (pDoc->m_flagBuildA)
-//         mb_statusSetText("åœ¨å¤šè¾¹å½¢Aä¸­åˆ›å»ºäº†æ–°å¤–ç¯ã€‚", s);
-//    else mb_statusSetText("åœ¨å¤šè¾¹å½¢Bä¸­åˆ›å»ºäº†æ–°å¤–ç¯ã€‚", s);
-//}
-//
-// 
-//void CPolyBooleanView::OnViewStandard()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_scale = 1.0; // ç¼©æ”¾æ¯”ä¾‹
-//    pDoc->m_translation.m_x = 0.0; // åæ ‡å¹³ç§»é‡
-//    pDoc->m_translation.m_y = 0.0; // åæ ‡å¹³ç§»é‡
-//    Invalidate( );
-//    mb_statusSetText("æ ‡å‡†åŒ–åæ ‡ç³»ã€‚", "ä¸å¹³ç§»ï¼Œä¹Ÿä¸ç¼©æ”¾ã€‚");
-//}
+  //// CPolyBooleanView ÏûÏ¢´¦Àí³ÌĞò
+  //void CPolyBooleanView::OnUpdateComboAorb(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar();
+  //    if (robbon_bar==NULL)
+  //        return;
+  //    CMFCRibbonComboBox* pbox = (CMFCRibbonComboBox*)robbon_bar->FindByID(ID_COMBO_AorB); // »ñÈ¡±à¼­¿ò¾ä±ú
+  //    if (pbox==NULL)
+  //        return;
+  //    pbox->AddItem("¶à±ßĞÎA");
+  //    pbox->AddItem("¶à±ßĞÎB");
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnComboAorb()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar();
+  //    if (robbon_bar==NULL)
+  //        return;
+  //    CMFCRibbonComboBox* pbox = (CMFCRibbonComboBox*)robbon_bar->FindByID(ID_COMBO_AorB); // »ñÈ¡±à¼­¿ò¾ä±ú
+  //
+  // 
+  //    if (pbox==NULL)
+  //        return;
+  //    pbox->AddItem("¶à±ßĞÎA");
+  //    pbox->AddItem("¶à±ßĞÎB");
+  //    int i = pbox->GetCurSel( );
+  //    pbox->SelectItem(i);
+  //    if (i==0)
+  //        pDoc->m_flagBuildA = true;
+  //    else pDoc->m_flagBuildA = false;
+  //    Invalidate( );
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnEdgeNumber()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    CString string;
+  //    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar(); //»ñÈ¡Ribbon bar ¾ä±ú
+  //    if (robbon_bar==NULL)
+  //        return;
+  //
+  // 
+  //    CMFCRibbonEdit* slider = (CMFCRibbonEdit*)robbon_bar->FindByID(ID_EDGE_NUMBER); // »ñÈ¡±à¼­¿ò¾ä±ú
+  //    if (slider==NULL)
+  //        return;
+  //    string= slider->GetEditText(); // »ñÈ¡Êı×Ö
+  //    int i = atoi(string);
+  //    if (i<3)
+  //        i = 3;
+  //    if (i>10000)
+  //        i=10000;
+  //    pDoc->m_edgeNumber = i;
+  //    string.Format("%d", i);
+  //    slider->SetEditText(string);
+  //    Invalidate( );
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnTolerance()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    CString string;
+  //    CMFCRibbonBar* robbon_bar = ((CFrameWndEx*)AfxGetMainWnd())->GetRibbonBar(); //»ñÈ¡Ribbon bar ¾ä±ú
+  //    if (robbon_bar==NULL)
+  //        return;
+  //
+  // 
+  //    CMFCRibbonEdit* slider = (CMFCRibbonEdit*)robbon_bar->FindByID(ID_TOLERANCE); // »ñÈ¡±à¼­¿ò¾ä±ú
+  //    if (slider==NULL)
+  //        return;
+  //    string= slider->GetEditText(); // »ñÈ¡Êı×Ö
+  //    double d = atof(string);
+  //    if (d<=0.0)
+  //        d = 1e-6;
+  //    pDoc->m_tolerance = d;
+  //    string.Format("%g", pDoc->m_tolerance);
+  //    slider->SetEditText(string);
+  //    Invalidate( );
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnNewRightOutloop()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    double dr = (r.right<r.bottom ? r.right : r.bottom);
+  //    dr /=3;
+  //    if (pDoc->m_flagBuildA)
+  //         gb_polygonNewOutLoopRegular(pDoc->m_a, pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //    else gb_polygonNewOutLoopRegular(pDoc->m_b, pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //    Invalidate( );
+  //    char s[100];
+  //    sprintf_s(s, 100, "ĞÂÍâ»·ÊÇÕı%1d±ßĞÎ", pDoc->m_edgeNumber);
+  //    if (pDoc->m_flagBuildA)
+  //         mb_statusSetText("ÔÚ¶à±ßĞÎAÖĞ´´½¨ÁËĞÂÍâ»·¡£", s);
+  //    else mb_statusSetText("ÔÚ¶à±ßĞÎBÖĞ´´½¨ÁËĞÂÍâ»·¡£", s);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnViewStandard()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_scale = 1.0; // Ëõ·Å±ÈÀı
+  //    pDoc->m_translation.m_x = 0.0; // ×ø±êÆ½ÒÆÁ¿
+  //    pDoc->m_translation.m_y = 0.0; // ×ø±êÆ½ÒÆÁ¿
+  //    Invalidate( );
+  //    mb_statusSetText("±ê×¼»¯×ø±êÏµ¡£", "²»Æ½ÒÆ£¬Ò²²»Ëõ·Å¡£");
+  //}
 
- 
-//void CPolyBooleanView::OnViewFit()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    double dxMin, dyMin, dxMax, dyMax, ra, s1, s2;
-//    int na = pDoc->m_a.m_pointArray.size( );
-//    int nb = pDoc->m_b.m_pointArray.size( );
-//    if ((na==0) && (nb==0))
-//        return;
-//
-// 
-//    if (na!=0)
-//    {
-//        dxMin = pDoc->m_a.m_pointArray[0].m_x;
-//        dxMax = dxMin;
-//        dyMin = pDoc->m_a.m_pointArray[0].m_y;
-//        dyMax = dyMin;
-//    }
-//    else if (nb!=0)
-//    {
-//        dxMin = pDoc->m_b.m_pointArray[0].m_x;
-//        dxMax = dxMin;
-//        dyMin = pDoc->m_b.m_pointArray[0].m_y;
-//        dyMax = dyMin;
-//    }
-//
-// 
-//    int i;
-//    for (i=0; i<na; i++)
-//    {
-//        if (dxMin>pDoc->m_a.m_pointArray[i].m_x)
-//            dxMin=pDoc->m_a.m_pointArray[i].m_x;
-//        if (dxMax<pDoc->m_a.m_pointArray[i].m_x)
-//            dxMax=pDoc->m_a.m_pointArray[i].m_x;
-//        if (dyMin>pDoc->m_a.m_pointArray[i].m_y)
-//            dyMin=pDoc->m_a.m_pointArray[i].m_y;
-//        if (dyMax<pDoc->m_a.m_pointArray[i].m_y)
-//            dyMax=pDoc->m_a.m_pointArray[i].m_y;
-//    } // forç»“æŸ
-//
-// 
-//    for (i=0; i<nb; i++)
-//    {
-//        if (dxMin>pDoc->m_b.m_pointArray[i].m_x)
-//            dxMin=pDoc->m_b.m_pointArray[i].m_x;
-//        if (dxMax<pDoc->m_b.m_pointArray[i].m_x)
-//            dxMax=pDoc->m_b.m_pointArray[i].m_x;
-//        if (dyMin>pDoc->m_b.m_pointArray[i].m_y)
-//            dyMin=pDoc->m_b.m_pointArray[i].m_y;
-//        if (dyMax<pDoc->m_b.m_pointArray[i].m_y)
-//            dyMax=pDoc->m_b.m_pointArray[i].m_y;
-//    } // forç»“æŸ
-//
-// 
-//    CRect r;
-//    GetClientRect(& r);
-//    r.bottom -=40;
-//    r.right -=40;
-//    pDoc->m_translation.m_x=(dxMin+dxMax)/2;
-//    pDoc->m_translation.m_y=(dyMin+dyMax)/2;
-//    ra=(double)(dxMax-dxMin);
-//    if (ra<10e-8)
-//        ra=1;
-//    s1=(double)(r.right-r.left)/ra;
-//    ra=(double)(dyMax-dyMin);
-//    if (ra<10e-8)
-//        ra=1;
-//    s2=(double)(r.bottom-r.top)/ra;
-//    pDoc->m_scale=(s1<s2 ? s1 : s2);
-//    Invalidate( );
-//    mb_statusSetText("è‡ªé€‚åº”æ˜¾ç¤º!", "å°½é‡å……æ»¡å±å¹•!");
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateSelectPoint(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==1)
-//        pCmdUI->SetCheck(true);
-//    else pCmdUI->SetCheck(false);
-//}
-//
-// 
-//void CPolyBooleanView::OnSelectPoint()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==1)
-//        pDoc->m_flagSelectType = 0;
-//    else pDoc->m_flagSelectType = 1;
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateSelectLoop(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==2)
-//        pCmdUI->SetCheck(true);
-//    else pCmdUI->SetCheck(false);
-//}
-//
-// 
-//void CPolyBooleanView::OnSelectLoop()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==2)
-//        pDoc->m_flagSelectType = 0;
-//    else pDoc->m_flagSelectType = 2;
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateSelectRegion(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==3)
-//        pCmdUI->SetCheck(true);
-//    else pCmdUI->SetCheck(false);
-//}
-//
-// 
-//void CPolyBooleanView::OnSelectRegion()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==3)
-//        pDoc->m_flagSelectType = 0;
-//    else pDoc->m_flagSelectType = 3;
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateSelectPolygon(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==4)
-//        pCmdUI->SetCheck(true);
-//    else pCmdUI->SetCheck(false);
-//}
-//
-// 
-//void CPolyBooleanView::OnSelectPolygon()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==4)
-//        pDoc->m_flagSelectType = 0;
-//    else pDoc->m_flagSelectType = 4;
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
 
- 
-//void CPolyBooleanView::OnUpdateSelectTriangle(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==5)
-//        pCmdUI->SetCheck(true);
-//    else pCmdUI->SetCheck(false);
-//}
-//
-// 
-//void CPolyBooleanView::OnSelectTriangle()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagSelectType==5)
-//        pDoc->m_flagSelectType = 0;
-//    else pDoc->m_flagSelectType = 5;
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateSelectOnly(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagShowSelect);
-//}
-//
-//void CPolyBooleanView::OnSelectOnly()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagShowSelect ^= true;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnLButtonDown(UINT nFlags, CPoint point)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ æ¶ˆæ¯å¤„ç†ç¨‹åºä»£ç å’Œ/æˆ–è°ƒç”¨é»˜è®¤å€¼
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    CP_Point ps, pg;
-//    ps.m_x = point.x;
-//    ps.m_y = point.y;
-//    CRect r;
-//    GetClientRect(& r);
-//    gb_pointConvertFromScreenToGlobal(pg, ps, 
-//        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
-//    pDoc->m_basePoint = pg;
-//    bool flagSuceess = false;
-//    CP_Polygon* pn0;
-//
-// 
-//    if (pDoc->m_flagAddIDPolygon==0)
-//         pn0 = &(pDoc->m_a);
-//    else pn0 = &(pDoc->m_b);
-//    if (pDoc->m_flagAdd == 3)
-//    {
-//        gb_insertPointInPolygon(*pn0, pDoc->m_flagAddIDRegion, pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop, pg);
-//        mb_statusSetText("ç‚¹æ·»åŠ æ“ä½œæˆåŠŸã€‚", "ç”¨é¼ æ ‡å³é”®ç»“æŸç‚¹æ·»åŠ æ“ä½œ");
-//        Invalidate( );
-//        CView::OnLButtonDown(nFlags, point);
-//        return;
-//    } // å¤–ifç»“æŸ
-//
-// 
-//   if ((pDoc->m_flagAdd == 1) || (pDoc->m_flagAdd == 2)) // ç¯
-//    {
-//        pDoc->m_flagAddPointArray.push_back(pg);
-//        if (pDoc->m_flagAdd == 1)
-//             mb_statusSetText("å¤–ç¯ç‚¹æ·»åŠ æ“ä½œæˆåŠŸã€‚", "ç”¨é¼ æ ‡å³é”®ç»“æŸå¤–ç¯æ·»åŠ æ“ä½œ");
-//        else mb_statusSetText("å†…ç¯ç‚¹æ·»åŠ æ“ä½œæˆåŠŸã€‚", "ç”¨é¼ æ ‡å³é”®ç»“æŸå†…ç¯æ·»åŠ æ“ä½œ");
-//        Invalidate( );
-//        CView::OnLButtonDown(nFlags, point);
-//        return;
-//    } // å¤–ifç»“æŸ
-//
-//    if ((!(pDoc->m_flagShowA))&&(!(pDoc->m_flagShowB)))
-//    {
-//        CView::OnLButtonDown(nFlags, point);
-//        return;
-//    } // ifç»“æŸ
-//
-// 
-//    double da, db;
-//    int ida, idb, ira, irb;
-//    CP_Polygon* pn1;
-//    VT_IntArray* pSet0;
-//    VT_IntArray* pSet1;
-//    CP_Point p0, p1;
-//    switch(pDoc->m_flagSelectType)
-//    {
-//    case 1: // ç‚¹ã€‚
-//        if (pDoc->m_flagShowA)
-//            gb_distanceMinPointPolygon(da, ida, pg, pDoc->m_a);
-//        else ida = -1;
-//        if (pDoc->m_flagShowB)
-//            gb_distanceMinPointPolygon(db, idb, pg, pDoc->m_b);
-//        else idb = -1;
-//
-// 
-//       if (ida>=0)
-//        {
-//            if (idb>=0)
-//            {
-//                if (da<=db)
-//                {
-//                    pDoc->m_flagSelect = true;
-//                    pDoc->m_flagSelectPolygon = 0;
-//                    pDoc->m_flagSelectID = ida;
-//                }
-//                else
-//                {
-//                    pDoc->m_flagSelect = true;
-//                    pDoc->m_flagSelectPolygon = 1;
-//                    pDoc->m_flagSelectID = idb;
-//                }
-//            }
-//            else
-//            {
-//                pDoc->m_flagSelect = true;
-//                pDoc->m_flagSelectPolygon = 0;
-//                pDoc->m_flagSelectID = ida;
-//            }
-//        }
-//
-// 
-//        else
-//        {
-//            if (idb>=0)
-//            {
-//                pDoc->m_flagSelect = true;
-//                pDoc->m_flagSelectPolygon = 1;
-//                pDoc->m_flagSelectID = idb;
-//            }
-//            else pDoc->m_flagSelect = false;
-//        }
-//
-// 
-//      if (pDoc->m_flagSelect)
-//        {
-//            if (pDoc->m_flagMoveSame)
-//            {
-//                if (pDoc->m_flagSelectPolygon==0)
-//                {
-//                    pn0 = &(pDoc->m_a);
-//                    pn1 = &(pDoc->m_b);
-//                    pSet0 = &(pDoc->m_flagSelectIDSetInA);
-//                    pSet1 = &(pDoc->m_flagSelectIDSetInB);
-//                }
-//                else
-//                {
-//                    pn0 = &(pDoc->m_b);
-//                    pn1 = &(pDoc->m_a);
-//                    pSet0 = &(pDoc->m_flagSelectIDSetInB);
-//                    pSet1 = &(pDoc->m_flagSelectIDSetInA);
-//                } // if/elseç»“æŸ
-//                gb_intArrayInitPoint(*pSet0, *pn0, pDoc->m_flagSelectID, pDoc->m_tolerance);
-//                gb_intArrayInitPolygonSamePoint(*pSet1, *pn1, *pSet0, *pn0, pDoc->m_tolerance);
-//            } // ifç»“æŸ
-//        } // ifç»“æŸ
-//        break;
-//
-// 
-//    case 2: // ç¯ã€‚
-//    case 3: // åŒºåŸŸã€‚
-//    case 4: // å¤šè¾¹å½¢ã€‚
-//        if (pDoc->m_flagShowA)
-//            gb_distanceMinPointLoop(da, ira, ida, pg, pDoc->m_a);
-//        else ida = -1;
-//        if (pDoc->m_flagShowB)
-//            gb_distanceMinPointLoop(db, irb, idb, pg, pDoc->m_b);
-//        else idb = -1;
-//
-// 
-//       if (ida>=0)
-//        {
-//            if (idb>=0)
-//            {
-//                if (da<=db)
-//                {
-//                    pDoc->m_flagSelect = true;
-//                    pDoc->m_flagSelectPolygon = 0;
-//                    pDoc->m_flagSelectRegion = ira;
-//                    pDoc->m_flagSelectID = ida;
-//                }
-//                else
-//                {
-//                    pDoc->m_flagSelect = true;
-//                    pDoc->m_flagSelectPolygon = 1;
-//                    pDoc->m_flagSelectRegion = irb;
-//                    pDoc->m_flagSelectID = idb;
-//                }
-//            }
-//
-// 
-//          else
-//            {
-//                pDoc->m_flagSelect = true;
-//                pDoc->m_flagSelectPolygon = 0;
-//                pDoc->m_flagSelectRegion = ira;
-//                pDoc->m_flagSelectID = ida;
-//            }
-//        }
-//        else
-//        {
-//            if (idb>=0)
-//            {
-//                pDoc->m_flagSelect = true;
-//                pDoc->m_flagSelectPolygon = 1;
-//                pDoc->m_flagSelectRegion = irb;
-//                pDoc->m_flagSelectID = idb;
-//            }
-//            else pDoc->m_flagSelect = false;
-//        }
-//
-// 
-//       if (pDoc->m_flagSelect)
-//        {
-//            if (pDoc->m_flagMoveSame)
-//            {
-//                if (pDoc->m_flagSelectPolygon==0)
-//                {
-//                    pn0 = &(pDoc->m_a);
-//                    pn1 = &(pDoc->m_b);
-//                    pSet0 = &(pDoc->m_flagSelectIDSetInA);
-//                    pSet1 = &(pDoc->m_flagSelectIDSetInB);
-//                }
-//                else
-//                {
-//                    pn0 = &(pDoc->m_b);
-//                    pn1 = &(pDoc->m_a);
-//                    pSet0 = &(pDoc->m_flagSelectIDSetInB);
-//                    pSet1 = &(pDoc->m_flagSelectIDSetInA);
-//                } // if/elseç»“æŸ
-//
-// 
-//              if (pDoc->m_flagSelectType==4)
-//                    gb_intArrayInitPolygon(*pSet0, *pn0);
-//                else if (pDoc->m_flagSelectType==3)
-//                    gb_intArrayInitRegion(*pSet0, *pn0, pDoc->m_flagSelectRegion, pDoc->m_tolerance);
-//                else if (pDoc->m_flagSelectType==2)
-//                    gb_intArrayInitLoop(*pSet0, *pn0, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, pDoc->m_tolerance);
-//                gb_intArrayInitPolygonSamePoint(*pSet1, *pn1, *pSet0, *pn0, pDoc->m_tolerance);
-//            } // ifç»“æŸ
-//        } // ifç»“æŸ
-//        break;
-//    case 5: // å‰–åˆ†ä¸‰è§’å½¢ã€‚
-//        break;
-//    } // switchç»“æŸ
-//
-//   CView::OnLButtonDown(nFlags, point);
-//    Invalidate( );
-//    if (pDoc->m_flagSelect)
-//        pDoc->m_flagMouseDown = true;
-//}
-//
-// 
-//void CPolyBooleanView::OnLButtonUp(UINT nFlags, CPoint point)
-//{
-//    CView::OnLButtonUp(nFlags, point);
-//    // TODO: åœ¨æ­¤æ·»åŠ æ¶ˆæ¯å¤„ç†ç¨‹åºä»£ç å’Œ/æˆ–è°ƒç”¨é»˜è®¤å€¼
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (!pDoc->m_flagSelect)
-//        return;
-//    if (!pDoc->m_flagMouseDown)
-//        return;
-//    CP_Point ps, pg;
-//    ps.m_x = point.x;
-//    ps.m_y = point.y;
-//    CRect r;
-//    GetClientRect(& r);
-//    gb_pointConvertFromScreenToGlobal(pg, ps, 
-//        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
-//
-// 
-//    double vx = pg.m_x - pDoc->m_basePoint.m_x;
-//    double vy = pg.m_y - pDoc->m_basePoint.m_y;
-//    if (pDoc->m_flagMoveSame)
-//    {
-//        gb_movePointIntArray(pDoc->m_a, pDoc->m_flagSelectIDSetInA, vx, vy);
-//        gb_movePointIntArray(pDoc->m_b, pDoc->m_flagSelectIDSetInB, vx, vy);
-//        pDoc->m_basePoint = pg;
-//        Invalidate( );
-//        pDoc->m_flagMouseDown = false;
-//        return;
-//    } // ifç»“æŸ
-//
-// 
-//   switch(pDoc->m_flagSelectType)
-//    {
-//    case 1: // ç‚¹ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_movePoint(pDoc->m_a, pDoc->m_flagSelectID, vx, vy);
-//        else gb_movePoint(pDoc->m_b, pDoc->m_flagSelectID, vx, vy);
-//        break;
-//    case 2: // ç¯ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_moveLoop(pDoc->m_a, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
-//        else gb_moveLoop(pDoc->m_b, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
-//        break;
-//    case 3: // åŒºåŸŸã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_moveRegion(pDoc->m_a, pDoc->m_flagSelectRegion, vx, vy);
-//        else gb_moveRegion(pDoc->m_b, pDoc->m_flagSelectRegion, vx, vy);
-//        break;
-//
-// 
-//    case 4: // å¤šè¾¹å½¢ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_movePolygon(pDoc->m_a, vx, vy);
-//        else gb_movePolygon(pDoc->m_b, vx, vy);
-//        break;
-//    case 5: // å‰–åˆ†ä¸‰è§’å½¢ã€‚
-//        break;
-//    } // switchç»“æŸ
-//
-//    pDoc->m_basePoint = pg;
-//    Invalidate( );
-//    pDoc->m_flagMouseDown = false;
-//}
-//
-// 
-//void CPolyBooleanView::OnMouseMove(UINT nFlags, CPoint point)
-//{
-//    CView::OnMouseMove(nFlags, point);
-//    // TODO: åœ¨æ­¤æ·»åŠ æ¶ˆæ¯å¤„ç†ç¨‹åºä»£ç å’Œ/æˆ–è°ƒç”¨é»˜è®¤å€¼
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (!pDoc->m_flagSelect)
-//        return;
-//    if (!pDoc->m_flagMouseDown)
-//        return;
-//    CP_Point ps, pg;
-//    ps.m_x = point.x;
-//    ps.m_y = point.y;
-//    CRect r;
-//    GetClientRect(& r);
-//    gb_pointConvertFromScreenToGlobal(pg, ps, 
-//        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
-//
-// 
-//   double vx = pg.m_x - pDoc->m_basePoint.m_x;
-//    double vy = pg.m_y - pDoc->m_basePoint.m_y;
-//
-//    if (pDoc->m_flagMoveSame)
-//    {
-//        gb_movePointIntArray(pDoc->m_a, pDoc->m_flagSelectIDSetInA, vx, vy);
-//        gb_movePointIntArray(pDoc->m_b, pDoc->m_flagSelectIDSetInB, vx, vy);
-//        pDoc->m_basePoint = pg;
-//        Invalidate( );
-//        return;
-//    } // ifç»“æŸ
-//
-//    switch(pDoc->m_flagSelectType)
-//    {
-//    case 1: // ç‚¹ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_movePoint(pDoc->m_a, pDoc->m_flagSelectID, vx, vy);
-//        else gb_movePoint(pDoc->m_b, pDoc->m_flagSelectID, vx, vy);
-//        break;
-//
-// 
-//    case 2: // ç¯ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_moveLoop(pDoc->m_a, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
-//        else gb_moveLoop(pDoc->m_b, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
-//        break;
-//    case 3: // åŒºåŸŸã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_moveRegion(pDoc->m_a, pDoc->m_flagSelectRegion, vx, vy);
-//        else gb_moveRegion(pDoc->m_b, pDoc->m_flagSelectRegion, vx, vy);
-//        break;
-//    case 4: // å¤šè¾¹å½¢ã€‚
-//        if (pDoc->m_flagSelectPolygon==0) // A
-//             gb_movePolygon(pDoc->m_a, vx, vy);
-//        else gb_movePolygon(pDoc->m_b, vx, vy);
-//        break;
-//    case 5: // å‰–åˆ†ä¸‰è§’å½¢ã€‚
-//        break;
-//    } // switchç»“æŸ
-//
-//    pDoc->m_basePoint = pg;
-//    Invalidate( );
-//}
-//
-// 
-//void CPolyBooleanView::OnNewRightInloop()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    bool flagSuccess = false;
-//    bool flagA = true;
-//    CRect r;
-//    GetClientRect(& r);
-//    double dr = (r.right<r.bottom ? r.right : r.bottom);
-//    dr /=4;
-//    int ir = pDoc->m_flagSelectRegion;
-//
-// 
-//    if (!pDoc->m_flagSelect)
-//    {
-//        if (pDoc->m_flagBuildA)
-//             flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_a.m_regionArray.size( )-1,
-//                pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//        else
-//        {
-//            flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_b.m_regionArray.size( )-1,
-//                pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//            flagA = false;
-//        } // if/elseç»“æŸ
-//    }
-//
-// 
-//    else
-//    {
-//        switch(pDoc->m_flagSelectType)
-//        {
-//        case 1: // ç‚¹ã€‚
-//        case 4: // å¤šè¾¹å½¢ã€‚
-//            if (pDoc->m_flagSelectPolygon==0)
-//                 flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_a.m_regionArray.size( )-1,
-//                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//            else
-//            {
-//                flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_b.m_regionArray.size( )-1,
-//                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//                flagA = false;
-//            } // if/elseç»“æŸ
-//            break;
-//
-// 
-//       case 2: // ç¯ã€‚
-//        case 3: // åŒºåŸŸã€‚
-//            if (pDoc->m_flagSelectPolygon==0)
-//                 flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_flagSelectRegion,
-//                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//            else
-//            {
-//                flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_flagSelectRegion,
-//                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
-//                flagA = false;
-//            } // if/elseç»“æŸ
-//            break;
-//        } // switchç»“æŸ
-//    } // if/elseç»“æŸ
-//    Invalidate( );
-//
-//    char s[100];
-//    sprintf_s(s, 100, "æ–°å†…ç¯ä½äºå¤šè¾¹å½¢%cä¸­ã€‚", (flagA ? 'A' : 'B'));
-//    if (flagSuccess)
-//         mb_statusSetText("æ–°å†…ç¯åˆ›å»ºæˆåŠŸã€‚", s);
-//    else mb_statusSetText("æ²¡æœ‰åˆ›å»ºæ–°å†…ç¯ã€‚", s);
-//}
-//
-// 
-//void CPolyBooleanView::OnAddOutloop()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagAdd!=0)
-//    {
-//        MessageBox("å‰ä¸€ä¸ªæ·»åŠ æ“ä½œè¿˜æ²¡æœ‰å®Œæˆï¼Œè¯·ç»§ç»­å‰ä¸€ä¸ªæ“ä½œæˆ–æŒ‰é¼ æ ‡å³é”®ç»“æŸå‰ä¸€ä¸ªæ·»åŠ æ“ä½œã€‚", "æ“ä½œé”™è¯¯");
-//    } // ifç»“æŸ
-//
-// 
-//    if (pDoc->m_flagSelect)
-//    {
-//        if (pDoc->m_flagSelectPolygon==0)
-//             pDoc->m_flagAddIDPolygon = 0;
-//        else pDoc->m_flagAddIDPolygon = 1;
-//    }
-//    else
-//    {
-//        if (pDoc->m_flagBuildA)
-//             pDoc->m_flagAddIDPolygon = 0;
-//        else pDoc->m_flagAddIDPolygon = 1;
-//    } // if/elseç»“æŸ
-//    pDoc->m_flagAddPointArray.clear( );
-//    pDoc->m_flagAdd = 1;
-//    mb_statusSetText("è¯·æŒ‰é¼ æ ‡å·¦é”®åœ¨å·¥ä½œåŒºä¸­æ·»åŠ æ–°å¤–ç¯çš„ç‚¹", "è¯·ç”¨é¼ æ ‡å³é”®ç»“æŸæ–°å¤–ç¯æ·»åŠ æ“ä½œ");
-//}
+  //void CPolyBooleanView::OnViewFit()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    double dxMin, dyMin, dxMax, dyMax, ra, s1, s2;
+  //    int na = pDoc->m_a.m_pointArray.size( );
+  //    int nb = pDoc->m_b.m_pointArray.size( );
+  //    if ((na==0) && (nb==0))
+  //        return;
+  //
+  // 
+  //    if (na!=0)
+  //    {
+  //        dxMin = pDoc->m_a.m_pointArray[0].m_x;
+  //        dxMax = dxMin;
+  //        dyMin = pDoc->m_a.m_pointArray[0].m_y;
+  //        dyMax = dyMin;
+  //    }
+  //    else if (nb!=0)
+  //    {
+  //        dxMin = pDoc->m_b.m_pointArray[0].m_x;
+  //        dxMax = dxMin;
+  //        dyMin = pDoc->m_b.m_pointArray[0].m_y;
+  //        dyMax = dyMin;
+  //    }
+  //
+  // 
+  //    int i;
+  //    for (i=0; i<na; i++)
+  //    {
+  //        if (dxMin>pDoc->m_a.m_pointArray[i].m_x)
+  //            dxMin=pDoc->m_a.m_pointArray[i].m_x;
+  //        if (dxMax<pDoc->m_a.m_pointArray[i].m_x)
+  //            dxMax=pDoc->m_a.m_pointArray[i].m_x;
+  //        if (dyMin>pDoc->m_a.m_pointArray[i].m_y)
+  //            dyMin=pDoc->m_a.m_pointArray[i].m_y;
+  //        if (dyMax<pDoc->m_a.m_pointArray[i].m_y)
+  //            dyMax=pDoc->m_a.m_pointArray[i].m_y;
+  //    } // for½áÊø
+  //
+  // 
+  //    for (i=0; i<nb; i++)
+  //    {
+  //        if (dxMin>pDoc->m_b.m_pointArray[i].m_x)
+  //            dxMin=pDoc->m_b.m_pointArray[i].m_x;
+  //        if (dxMax<pDoc->m_b.m_pointArray[i].m_x)
+  //            dxMax=pDoc->m_b.m_pointArray[i].m_x;
+  //        if (dyMin>pDoc->m_b.m_pointArray[i].m_y)
+  //            dyMin=pDoc->m_b.m_pointArray[i].m_y;
+  //        if (dyMax<pDoc->m_b.m_pointArray[i].m_y)
+  //            dyMax=pDoc->m_b.m_pointArray[i].m_y;
+  //    } // for½áÊø
+  //
+  // 
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    r.bottom -=40;
+  //    r.right -=40;
+  //    pDoc->m_translation.m_x=(dxMin+dxMax)/2;
+  //    pDoc->m_translation.m_y=(dyMin+dyMax)/2;
+  //    ra=(double)(dxMax-dxMin);
+  //    if (ra<10e-8)
+  //        ra=1;
+  //    s1=(double)(r.right-r.left)/ra;
+  //    ra=(double)(dyMax-dyMin);
+  //    if (ra<10e-8)
+  //        ra=1;
+  //    s2=(double)(r.bottom-r.top)/ra;
+  //    pDoc->m_scale=(s1<s2 ? s1 : s2);
+  //    Invalidate( );
+  //    mb_statusSetText("×ÔÊÊÓ¦ÏÔÊ¾!", "¾¡Á¿³äÂúÆÁÄ»!");
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateSelectPoint(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==1)
+  //        pCmdUI->SetCheck(true);
+  //    else pCmdUI->SetCheck(false);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnSelectPoint()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==1)
+  //        pDoc->m_flagSelectType = 0;
+  //    else pDoc->m_flagSelectType = 1;
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateSelectLoop(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==2)
+  //        pCmdUI->SetCheck(true);
+  //    else pCmdUI->SetCheck(false);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnSelectLoop()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==2)
+  //        pDoc->m_flagSelectType = 0;
+  //    else pDoc->m_flagSelectType = 2;
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateSelectRegion(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==3)
+  //        pCmdUI->SetCheck(true);
+  //    else pCmdUI->SetCheck(false);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnSelectRegion()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==3)
+  //        pDoc->m_flagSelectType = 0;
+  //    else pDoc->m_flagSelectType = 3;
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateSelectPolygon(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==4)
+  //        pCmdUI->SetCheck(true);
+  //    else pCmdUI->SetCheck(false);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnSelectPolygon()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==4)
+  //        pDoc->m_flagSelectType = 0;
+  //    else pDoc->m_flagSelectType = 4;
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
 
- 
-//void CPolyBooleanView::OnAddInloop()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagAdd!=0)
-//    {
-//        MessageBox("å‰ä¸€ä¸ªæ·»åŠ æ“ä½œè¿˜æ²¡æœ‰å®Œæˆï¼Œè¯·ç»§ç»­å‰ä¸€ä¸ªæ“ä½œæˆ–æŒ‰é¼ æ ‡å³é”®ç»“æŸå‰ä¸€ä¸ªæ·»åŠ æ“ä½œã€‚", "æ“ä½œé”™è¯¯");
-//    } // ifç»“æŸ
-//    bool flagSuceess = false;
-//    CP_Polygon* pn = NULL;
-//
-// 
-//    if (pDoc->m_flagSelect)
-//    {
-//        if (pDoc->m_flagSelectPolygon==0)
-//        {
-//            pDoc->m_flagAddIDPolygon = 0;
-//            pn = &(pDoc->m_a);
-//        }
-//        else
-//        {
-//            pDoc->m_flagAddIDPolygon = 1;
-//            pn = &(pDoc->m_b);
-//        } // if/elseç»“æŸ
-//
-// 
-//       switch(pDoc->m_flagSelectType)
-//        {
-//        case 1: // ç‚¹ã€‚
-//            flagSuceess = gb_findPointInLoop(*pn, pDoc->m_flagAddIDRegion,
-//                pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop,
-//                pDoc->m_flagSelectID);
-//            break;
-//        case 2: // ç¯ã€‚
-//            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
-//            pDoc->m_flagAddIDLoop = pDoc->m_flagSelectID;
-//            flagSuceess = true;
-//            break;
-//        case 3: // åŒºåŸŸã€‚
-//            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            flagSuceess = true;
-//            break;
-//
-// 
-//        case 4: // å¤šè¾¹å½¢ã€‚
-//            pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
-//            if (pDoc->m_flagAddIDRegion<0)
-//                break;
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            if (pDoc->m_flagAddIDLoop<0)
-//                break;
-//            flagSuceess = true;
-//            break;
-//        } // switchç»“æŸ
-//    }
-//
-// 
-//    else
-//    {
-//        if (pDoc->m_flagBuildA)
-//        {
-//            pDoc->m_flagAddIDPolygon = 0;
-//            pn = &(pDoc->m_a);
-//        }
-//        else
-//        {
-//            pDoc->m_flagAddIDPolygon = 1;
-//            pn = &(pDoc->m_b);
-//        } // if/elseç»“æŸ
-//
-//        pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
-//        if (pDoc->m_flagAddIDRegion>=0)
-//        {
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            if (pDoc->m_flagAddIDLoop>=0)
-//            {
-//                flagSuceess = true;
-//            } // if(idL)ç»“æŸ
-//        } // if(idr)ç»“æŸ
-//    } // if/elseç»“æŸ
-//
-// 
-//    if (flagSuceess)
-//    {
-//        pDoc->m_flagAddPointArray.clear( );
-//        pDoc->m_flagAdd = 2;
-//        mb_statusSetText("è¯·æŒ‰é¼ æ ‡å·¦é”®åœ¨å·¥ä½œåŒºä¸­æ·»åŠ æ–°å†…ç¯çš„ç‚¹", "è¯·ç”¨é¼ æ ‡å³é”®ç»“æŸæ–°å†…ç¯æ·»åŠ æ“ä½œ");
-//    }
-//    else
-//    {
-//        pDoc->m_flagAdd = 0;
-//        if (pDoc->m_flagAddIDPolygon==0)
-//            mb_statusSetText("å†…ç¯æ·»åŠ æ“ä½œå¤±è´¥ã€‚", "å¤šè¾¹å½¢Aè¿˜æ²¡æœ‰ä»»ä½•å¤–ç¯ã€‚");
-//        else
-//            mb_statusSetText("å†…ç¯æ·»åŠ æ“ä½œå¤±è´¥ã€‚", "è¯·ç»™å¤šè¾¹å½¢Bå¢åŠ å¤–ç¯ï¼Œå†æ‰§è¡Œæœ¬æ“ä½œã€‚");
-//    } // if/elseç»“æŸ
-//}
-//
-// 
-//void CPolyBooleanView::OnAddPoint()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (pDoc->m_flagAdd!=0)
-//    {
-//        MessageBox("å‰ä¸€ä¸ªæ·»åŠ æ“ä½œè¿˜æ²¡æœ‰å®Œæˆï¼Œè¯·ç»§ç»­å‰ä¸€ä¸ªæ“ä½œæˆ–æŒ‰é¼ æ ‡å³é”®ç»“æŸå‰ä¸€ä¸ªæ·»åŠ æ“ä½œã€‚", "æ“ä½œé”™è¯¯");
-//        return;
-//    } // ifç»“æŸ
-//
-//    bool flagSuceess = false;
-//    CP_Polygon* pn = NULL;
-//
-// 
-//   if (pDoc->m_flagSelect)
-//    {
-//        if (pDoc->m_flagSelectPolygon==0)
-//        {
-//            pDoc->m_flagAddIDPolygon = 0;
-//            pn = &(pDoc->m_a);
-//        }
-//        else
-//        {
-//            pDoc->m_flagAddIDPolygon = 1;
-//            pn = &(pDoc->m_b);
-//        } // if/elseç»“æŸ
-//
-//        switch(pDoc->m_flagSelectType)
-//        {
-//        case 1: // ç‚¹ã€‚
-//            flagSuceess = gb_findPointInLoop(*pn, pDoc->m_flagAddIDRegion,
-//                pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop,
-//                pDoc->m_flagSelectID);
-//            break;
-//
-// 
-//      case 2: // ç¯ã€‚
-//            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
-//            pDoc->m_flagAddIDLoop = pDoc->m_flagSelectID;
-//            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
-//            if (pDoc->m_flagAddIDPointInLoop<0)
-//                break;
-//            flagSuceess = true;
-//            break;
-//        case 3: // åŒºåŸŸã€‚
-//            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
-//            if (pDoc->m_flagAddIDPointInLoop<0)
-//                break;
-//            flagSuceess = true;
-//            break;
-//
-// 
-//        case 4: // å¤šè¾¹å½¢ã€‚
-//            pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
-//            if (pDoc->m_flagAddIDRegion<0)
-//                break;
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            if (pDoc->m_flagAddIDLoop<0)
-//                break;
-//            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
-//            if (pDoc->m_flagAddIDPointInLoop<0)
-//                break;
-//            flagSuceess = true;
-//            break;
-//        } // switchç»“æŸ
-//    }
-//
-// 
-//    else
-//    {
-//        if (pDoc->m_flagBuildA)
-//        {
-//            pDoc->m_flagAddIDPolygon = 0;
-//            pn = &(pDoc->m_a);
-//        }
-//        else
-//        {
-//            pDoc->m_flagAddIDPolygon = 1;
-//            pn = &(pDoc->m_b);
-//        } // if/elseç»“æŸ
-//
-//        pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
-//
-// 
-//        if (pDoc->m_flagAddIDRegion>=0)
-//        {
-//            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
-//            if (pDoc->m_flagAddIDLoop>=0)
-//            {
-//                pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
-//                if (pDoc->m_flagAddIDPointInLoop>=0)
-//                {
-//                    flagSuceess = true;
-//                } // if(idLv)ç»“æŸ
-//            } // if(idL)ç»“æŸ
-//        } // if(idr)ç»“æŸ
-//    } // if/elseç»“æŸ
-//
-// 
-//    if (flagSuceess)
-//    {
-//        pDoc->m_flagAdd = 3;
-//        mb_statusSetText("ç”¨é¼ æ ‡å·¦é”®åœ¨å·¥ä½œåŒºä¸­æ·»åŠ ç‚¹", "ç”¨é¼ æ ‡å³é”®ç»“æŸç‚¹æ·»åŠ æ“ä½œ");
-//    }
-//    else
-//    {
-//        pDoc->m_flagAdd = 0;
-//        if (pDoc->m_flagAddIDPolygon==0)
-//            mb_statusSetText("ç‚¹æ·»åŠ æ“ä½œå¤±è´¥ã€‚", "å¤šè¾¹å½¢Aè¿˜æ²¡æœ‰ä»»ä½•å¤–ç¯ã€‚");
-//        else
-//            mb_statusSetText("ç‚¹æ·»åŠ æ“ä½œå¤±è´¥ã€‚", "è¯·ç»™å¤šè¾¹å½¢Bå¢åŠ å¤–ç¯ï¼Œå†æ‰§è¡Œæœ¬æ“ä½œã€‚");
-//        } // if/elseç»“æŸ
-//}
-//
-// 
-//void CPolyBooleanView::OnDelete()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    if (!pDoc->m_flagSelect)
-//    {
-//        MessageBox("è¿˜æ²¡æœ‰æ‹¾å–å›¾å½¢ï¼Œæ— æ³•åˆ é™¤ã€‚", "æ— æ•ˆæ“ä½œ");
-//		return;
-//    } // ifç»“æŸ
-//    if (pDoc->m_flagAdd!=0)
-//    {
-//        MessageBox("æ·»åŠ å›¾å½¢çš„æ“ä½œè¿˜æ²¡æœ‰ç»“æŸï¼Œæ— æ³•åˆ é™¤ã€‚", "æ— æ•ˆæ“ä½œ");
-//		return;
-//    } // ifç»“æŸ
-//
-// 
-//   CP_Polygon* pn;
-//    if (pDoc->m_flagSelectPolygon==0)
-//         pn = &(pDoc->m_a);
-//    else pn = &(pDoc->m_b);
-//    switch(pDoc->m_flagSelectType)
-//    {
-//    case 1: // ç‚¹ã€‚
-//        gb_removePoint(*pn, pDoc->m_flagSelectID);
-//        break;
-//    case 2: // ç¯ã€‚
-//        gb_removeLoop(*pn, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID);
-//        break;
-//    case 3: // åŒºåŸŸã€‚
-//        gb_removeRegion(*pn, pDoc->m_flagSelectRegion);
-//        break;
-//    case 4: // å¤šè¾¹å½¢ã€‚
-//        pn->mb_clear( );
-//        break;
-//    } // switchç»“æŸ
-//    pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateMoveSame(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagMoveSame);
-//}
-//
-// 
-//void CPolyBooleanView::OnMoveSame()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagMoveSame ^= true;
-//    if (!(pDoc->m_flagMoveSame))
-//    {
-//        pDoc->m_flagSelectIDSetInA.clear( );
-//        pDoc->m_flagSelectIDSetInB.clear( );
-//    } // ifç»“æŸ
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateViewA(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagShowA);
-//}
-//
-// 
-//void CPolyBooleanView::OnViewA()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagShowA ^= true;
-//
-//    if (!(pDoc->m_flagShowA))
-//        if (pDoc->m_flagSelectPolygon==0)
-//            pDoc->m_flagSelect = false;
-//
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateViewB(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagShowB);
-//}
 
- 
-//void CPolyBooleanView::OnViewB()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagShowB ^= true;
-//    if (!(pDoc->m_flagShowB))
-//        if (pDoc->m_flagSelectPolygon!=0)
-//            pDoc->m_flagSelect = false;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateViewPointId(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagShowPointID);
-//}
-//
-// 
-//void CPolyBooleanView::OnViewPointId()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagShowPointID ^= true;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnViewTFace()
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pDoc->m_flagShowTriangleFace ^= true;
-//    Invalidate(); // åˆ·æ–°
-//}
-//
-// 
-//void CPolyBooleanView::OnUpdateViewTFace(CCmdUI *pCmdUI)
-//{
-//    // TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤æ›´æ–°ç”¨æˆ·ç•Œé¢å¤„ç†ç¨‹åºä»£ç 
-//	CPolyBooleanDoc* pDoc = GetDocument();
-//	ASSERT_VALID(pDoc);
-//	if (!pDoc)
-//		return;
-//    pCmdUI->SetCheck(pDoc->m_flagShowTriangleFace);
-//}
+  //void CPolyBooleanView::OnUpdateSelectTriangle(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==5)
+  //        pCmdUI->SetCheck(true);
+  //    else pCmdUI->SetCheck(false);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnSelectTriangle()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagSelectType==5)
+  //        pDoc->m_flagSelectType = 0;
+  //    else pDoc->m_flagSelectType = 5;
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateSelectOnly(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagShowSelect);
+  //}
+  //
+  //void CPolyBooleanView::OnSelectOnly()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagShowSelect ^= true;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnLButtonDown(UINT nFlags, CPoint point)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÏûÏ¢´¦Àí³ÌĞò´úÂëºÍ/»òµ÷ÓÃÄ¬ÈÏÖµ
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    CP_Point ps, pg;
+  //    ps.m_x = point.x;
+  //    ps.m_y = point.y;
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    gb_pointConvertFromScreenToGlobal(pg, ps, 
+  //        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
+  //    pDoc->m_basePoint = pg;
+  //    bool flagSuceess = false;
+  //    CP_Polygon* pn0;
+  //
+  // 
+  //    if (pDoc->m_flagAddIDPolygon==0)
+  //         pn0 = &(pDoc->m_a);
+  //    else pn0 = &(pDoc->m_b);
+  //    if (pDoc->m_flagAdd == 3)
+  //    {
+  //        gb_insertPointInPolygon(*pn0, pDoc->m_flagAddIDRegion, pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop, pg);
+  //        mb_statusSetText("µãÌí¼Ó²Ù×÷³É¹¦¡£", "ÓÃÊó±êÓÒ¼ü½áÊøµãÌí¼Ó²Ù×÷");
+  //        Invalidate( );
+  //        CView::OnLButtonDown(nFlags, point);
+  //        return;
+  //    } // Íâif½áÊø
+  //
+  // 
+  //   if ((pDoc->m_flagAdd == 1) || (pDoc->m_flagAdd == 2)) // »·
+  //    {
+  //        pDoc->m_flagAddPointArray.push_back(pg);
+  //        if (pDoc->m_flagAdd == 1)
+  //             mb_statusSetText("Íâ»·µãÌí¼Ó²Ù×÷³É¹¦¡£", "ÓÃÊó±êÓÒ¼ü½áÊøÍâ»·Ìí¼Ó²Ù×÷");
+  //        else mb_statusSetText("ÄÚ»·µãÌí¼Ó²Ù×÷³É¹¦¡£", "ÓÃÊó±êÓÒ¼ü½áÊøÄÚ»·Ìí¼Ó²Ù×÷");
+  //        Invalidate( );
+  //        CView::OnLButtonDown(nFlags, point);
+  //        return;
+  //    } // Íâif½áÊø
+  //
+  //    if ((!(pDoc->m_flagShowA))&&(!(pDoc->m_flagShowB)))
+  //    {
+  //        CView::OnLButtonDown(nFlags, point);
+  //        return;
+  //    } // if½áÊø
+  //
+  // 
+  //    double da, db;
+  //    int ida, idb, ira, irb;
+  //    CP_Polygon* pn1;
+  //    VT_IntArray* pSet0;
+  //    VT_IntArray* pSet1;
+  //    CP_Point p0, p1;
+  //    switch(pDoc->m_flagSelectType)
+  //    {
+  //    case 1: // µã¡£
+  //        if (pDoc->m_flagShowA)
+  //            gb_distanceMinPointPolygon(da, ida, pg, pDoc->m_a);
+  //        else ida = -1;
+  //        if (pDoc->m_flagShowB)
+  //            gb_distanceMinPointPolygon(db, idb, pg, pDoc->m_b);
+  //        else idb = -1;
+  //
+  // 
+  //       if (ida>=0)
+  //        {
+  //            if (idb>=0)
+  //            {
+  //                if (da<=db)
+  //                {
+  //                    pDoc->m_flagSelect = true;
+  //                    pDoc->m_flagSelectPolygon = 0;
+  //                    pDoc->m_flagSelectID = ida;
+  //                }
+  //                else
+  //                {
+  //                    pDoc->m_flagSelect = true;
+  //                    pDoc->m_flagSelectPolygon = 1;
+  //                    pDoc->m_flagSelectID = idb;
+  //                }
+  //            }
+  //            else
+  //            {
+  //                pDoc->m_flagSelect = true;
+  //                pDoc->m_flagSelectPolygon = 0;
+  //                pDoc->m_flagSelectID = ida;
+  //            }
+  //        }
+  //
+  // 
+  //        else
+  //        {
+  //            if (idb>=0)
+  //            {
+  //                pDoc->m_flagSelect = true;
+  //                pDoc->m_flagSelectPolygon = 1;
+  //                pDoc->m_flagSelectID = idb;
+  //            }
+  //            else pDoc->m_flagSelect = false;
+  //        }
+  //
+  // 
+  //      if (pDoc->m_flagSelect)
+  //        {
+  //            if (pDoc->m_flagMoveSame)
+  //            {
+  //                if (pDoc->m_flagSelectPolygon==0)
+  //                {
+  //                    pn0 = &(pDoc->m_a);
+  //                    pn1 = &(pDoc->m_b);
+  //                    pSet0 = &(pDoc->m_flagSelectIDSetInA);
+  //                    pSet1 = &(pDoc->m_flagSelectIDSetInB);
+  //                }
+  //                else
+  //                {
+  //                    pn0 = &(pDoc->m_b);
+  //                    pn1 = &(pDoc->m_a);
+  //                    pSet0 = &(pDoc->m_flagSelectIDSetInB);
+  //                    pSet1 = &(pDoc->m_flagSelectIDSetInA);
+  //                } // if/else½áÊø
+  //                gb_intArrayInitPoint(*pSet0, *pn0, pDoc->m_flagSelectID, pDoc->m_tolerance);
+  //                gb_intArrayInitPolygonSamePoint(*pSet1, *pn1, *pSet0, *pn0, pDoc->m_tolerance);
+  //            } // if½áÊø
+  //        } // if½áÊø
+  //        break;
+  //
+  // 
+  //    case 2: // »·¡£
+  //    case 3: // ÇøÓò¡£
+  //    case 4: // ¶à±ßĞÎ¡£
+  //        if (pDoc->m_flagShowA)
+  //            gb_distanceMinPointLoop(da, ira, ida, pg, pDoc->m_a);
+  //        else ida = -1;
+  //        if (pDoc->m_flagShowB)
+  //            gb_distanceMinPointLoop(db, irb, idb, pg, pDoc->m_b);
+  //        else idb = -1;
+  //
+  // 
+  //       if (ida>=0)
+  //        {
+  //            if (idb>=0)
+  //            {
+  //                if (da<=db)
+  //                {
+  //                    pDoc->m_flagSelect = true;
+  //                    pDoc->m_flagSelectPolygon = 0;
+  //                    pDoc->m_flagSelectRegion = ira;
+  //                    pDoc->m_flagSelectID = ida;
+  //                }
+  //                else
+  //                {
+  //                    pDoc->m_flagSelect = true;
+  //                    pDoc->m_flagSelectPolygon = 1;
+  //                    pDoc->m_flagSelectRegion = irb;
+  //                    pDoc->m_flagSelectID = idb;
+  //                }
+  //            }
+  //
+  // 
+  //          else
+  //            {
+  //                pDoc->m_flagSelect = true;
+  //                pDoc->m_flagSelectPolygon = 0;
+  //                pDoc->m_flagSelectRegion = ira;
+  //                pDoc->m_flagSelectID = ida;
+  //            }
+  //        }
+  //        else
+  //        {
+  //            if (idb>=0)
+  //            {
+  //                pDoc->m_flagSelect = true;
+  //                pDoc->m_flagSelectPolygon = 1;
+  //                pDoc->m_flagSelectRegion = irb;
+  //                pDoc->m_flagSelectID = idb;
+  //            }
+  //            else pDoc->m_flagSelect = false;
+  //        }
+  //
+  // 
+  //       if (pDoc->m_flagSelect)
+  //        {
+  //            if (pDoc->m_flagMoveSame)
+  //            {
+  //                if (pDoc->m_flagSelectPolygon==0)
+  //                {
+  //                    pn0 = &(pDoc->m_a);
+  //                    pn1 = &(pDoc->m_b);
+  //                    pSet0 = &(pDoc->m_flagSelectIDSetInA);
+  //                    pSet1 = &(pDoc->m_flagSelectIDSetInB);
+  //                }
+  //                else
+  //                {
+  //                    pn0 = &(pDoc->m_b);
+  //                    pn1 = &(pDoc->m_a);
+  //                    pSet0 = &(pDoc->m_flagSelectIDSetInB);
+  //                    pSet1 = &(pDoc->m_flagSelectIDSetInA);
+  //                } // if/else½áÊø
+  //
+  // 
+  //              if (pDoc->m_flagSelectType==4)
+  //                    gb_intArrayInitPolygon(*pSet0, *pn0);
+  //                else if (pDoc->m_flagSelectType==3)
+  //                    gb_intArrayInitRegion(*pSet0, *pn0, pDoc->m_flagSelectRegion, pDoc->m_tolerance);
+  //                else if (pDoc->m_flagSelectType==2)
+  //                    gb_intArrayInitLoop(*pSet0, *pn0, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, pDoc->m_tolerance);
+  //                gb_intArrayInitPolygonSamePoint(*pSet1, *pn1, *pSet0, *pn0, pDoc->m_tolerance);
+  //            } // if½áÊø
+  //        } // if½áÊø
+  //        break;
+  //    case 5: // ÆÊ·ÖÈı½ÇĞÎ¡£
+  //        break;
+  //    } // switch½áÊø
+  //
+  //   CView::OnLButtonDown(nFlags, point);
+  //    Invalidate( );
+  //    if (pDoc->m_flagSelect)
+  //        pDoc->m_flagMouseDown = true;
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnLButtonUp(UINT nFlags, CPoint point)
+  //{
+  //    CView::OnLButtonUp(nFlags, point);
+  //    // TODO: ÔÚ´ËÌí¼ÓÏûÏ¢´¦Àí³ÌĞò´úÂëºÍ/»òµ÷ÓÃÄ¬ÈÏÖµ
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (!pDoc->m_flagSelect)
+  //        return;
+  //    if (!pDoc->m_flagMouseDown)
+  //        return;
+  //    CP_Point ps, pg;
+  //    ps.m_x = point.x;
+  //    ps.m_y = point.y;
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    gb_pointConvertFromScreenToGlobal(pg, ps, 
+  //        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
+  //
+  // 
+  //    double vx = pg.m_x - pDoc->m_basePoint.m_x;
+  //    double vy = pg.m_y - pDoc->m_basePoint.m_y;
+  //    if (pDoc->m_flagMoveSame)
+  //    {
+  //        gb_movePointIntArray(pDoc->m_a, pDoc->m_flagSelectIDSetInA, vx, vy);
+  //        gb_movePointIntArray(pDoc->m_b, pDoc->m_flagSelectIDSetInB, vx, vy);
+  //        pDoc->m_basePoint = pg;
+  //        Invalidate( );
+  //        pDoc->m_flagMouseDown = false;
+  //        return;
+  //    } // if½áÊø
+  //
+  // 
+  //   switch(pDoc->m_flagSelectType)
+  //    {
+  //    case 1: // µã¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_movePoint(pDoc->m_a, pDoc->m_flagSelectID, vx, vy);
+  //        else gb_movePoint(pDoc->m_b, pDoc->m_flagSelectID, vx, vy);
+  //        break;
+  //    case 2: // »·¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_moveLoop(pDoc->m_a, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
+  //        else gb_moveLoop(pDoc->m_b, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
+  //        break;
+  //    case 3: // ÇøÓò¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_moveRegion(pDoc->m_a, pDoc->m_flagSelectRegion, vx, vy);
+  //        else gb_moveRegion(pDoc->m_b, pDoc->m_flagSelectRegion, vx, vy);
+  //        break;
+  //
+  // 
+  //    case 4: // ¶à±ßĞÎ¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_movePolygon(pDoc->m_a, vx, vy);
+  //        else gb_movePolygon(pDoc->m_b, vx, vy);
+  //        break;
+  //    case 5: // ÆÊ·ÖÈı½ÇĞÎ¡£
+  //        break;
+  //    } // switch½áÊø
+  //
+  //    pDoc->m_basePoint = pg;
+  //    Invalidate( );
+  //    pDoc->m_flagMouseDown = false;
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnMouseMove(UINT nFlags, CPoint point)
+  //{
+  //    CView::OnMouseMove(nFlags, point);
+  //    // TODO: ÔÚ´ËÌí¼ÓÏûÏ¢´¦Àí³ÌĞò´úÂëºÍ/»òµ÷ÓÃÄ¬ÈÏÖµ
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (!pDoc->m_flagSelect)
+  //        return;
+  //    if (!pDoc->m_flagMouseDown)
+  //        return;
+  //    CP_Point ps, pg;
+  //    ps.m_x = point.x;
+  //    ps.m_y = point.y;
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    gb_pointConvertFromScreenToGlobal(pg, ps, 
+  //        pDoc->m_scale, pDoc->m_translation, r.right, r.bottom);
+  //
+  // 
+  //   double vx = pg.m_x - pDoc->m_basePoint.m_x;
+  //    double vy = pg.m_y - pDoc->m_basePoint.m_y;
+  //
+  //    if (pDoc->m_flagMoveSame)
+  //    {
+  //        gb_movePointIntArray(pDoc->m_a, pDoc->m_flagSelectIDSetInA, vx, vy);
+  //        gb_movePointIntArray(pDoc->m_b, pDoc->m_flagSelectIDSetInB, vx, vy);
+  //        pDoc->m_basePoint = pg;
+  //        Invalidate( );
+  //        return;
+  //    } // if½áÊø
+  //
+  //    switch(pDoc->m_flagSelectType)
+  //    {
+  //    case 1: // µã¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_movePoint(pDoc->m_a, pDoc->m_flagSelectID, vx, vy);
+  //        else gb_movePoint(pDoc->m_b, pDoc->m_flagSelectID, vx, vy);
+  //        break;
+  //
+  // 
+  //    case 2: // »·¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_moveLoop(pDoc->m_a, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
+  //        else gb_moveLoop(pDoc->m_b, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID, vx, vy);
+  //        break;
+  //    case 3: // ÇøÓò¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_moveRegion(pDoc->m_a, pDoc->m_flagSelectRegion, vx, vy);
+  //        else gb_moveRegion(pDoc->m_b, pDoc->m_flagSelectRegion, vx, vy);
+  //        break;
+  //    case 4: // ¶à±ßĞÎ¡£
+  //        if (pDoc->m_flagSelectPolygon==0) // A
+  //             gb_movePolygon(pDoc->m_a, vx, vy);
+  //        else gb_movePolygon(pDoc->m_b, vx, vy);
+  //        break;
+  //    case 5: // ÆÊ·ÖÈı½ÇĞÎ¡£
+  //        break;
+  //    } // switch½áÊø
+  //
+  //    pDoc->m_basePoint = pg;
+  //    Invalidate( );
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnNewRightInloop()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    bool flagSuccess = false;
+  //    bool flagA = true;
+  //    CRect r;
+  //    GetClientRect(& r);
+  //    double dr = (r.right<r.bottom ? r.right : r.bottom);
+  //    dr /=4;
+  //    int ir = pDoc->m_flagSelectRegion;
+  //
+  // 
+  //    if (!pDoc->m_flagSelect)
+  //    {
+  //        if (pDoc->m_flagBuildA)
+  //             flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_a.m_regionArray.size( )-1,
+  //                pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //        else
+  //        {
+  //            flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_b.m_regionArray.size( )-1,
+  //                pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //            flagA = false;
+  //        } // if/else½áÊø
+  //    }
+  //
+  // 
+  //    else
+  //    {
+  //        switch(pDoc->m_flagSelectType)
+  //        {
+  //        case 1: // µã¡£
+  //        case 4: // ¶à±ßĞÎ¡£
+  //            if (pDoc->m_flagSelectPolygon==0)
+  //                 flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_a.m_regionArray.size( )-1,
+  //                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //            else
+  //            {
+  //                flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_b.m_regionArray.size( )-1,
+  //                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //                flagA = false;
+  //            } // if/else½áÊø
+  //            break;
+  //
+  // 
+  //       case 2: // »·¡£
+  //        case 3: // ÇøÓò¡£
+  //            if (pDoc->m_flagSelectPolygon==0)
+  //                 flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_a, pDoc->m_flagSelectRegion,
+  //                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //            else
+  //            {
+  //                flagSuccess = gb_polygonNewInLoopRegular(pDoc->m_b, pDoc->m_flagSelectRegion,
+  //                    pDoc->m_edgeNumber, dr, 0.0, 0.0);
+  //                flagA = false;
+  //            } // if/else½áÊø
+  //            break;
+  //        } // switch½áÊø
+  //    } // if/else½áÊø
+  //    Invalidate( );
+  //
+  //    char s[100];
+  //    sprintf_s(s, 100, "ĞÂÄÚ»·Î»ÓÚ¶à±ßĞÎ%cÖĞ¡£", (flagA ? 'A' : 'B'));
+  //    if (flagSuccess)
+  //         mb_statusSetText("ĞÂÄÚ»·´´½¨³É¹¦¡£", s);
+  //    else mb_statusSetText("Ã»ÓĞ´´½¨ĞÂÄÚ»·¡£", s);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnAddOutloop()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagAdd!=0)
+  //    {
+  //        MessageBox("Ç°Ò»¸öÌí¼Ó²Ù×÷»¹Ã»ÓĞÍê³É£¬Çë¼ÌĞøÇ°Ò»¸ö²Ù×÷»ò°´Êó±êÓÒ¼ü½áÊøÇ°Ò»¸öÌí¼Ó²Ù×÷¡£", "²Ù×÷´íÎó");
+  //    } // if½áÊø
+  //
+  // 
+  //    if (pDoc->m_flagSelect)
+  //    {
+  //        if (pDoc->m_flagSelectPolygon==0)
+  //             pDoc->m_flagAddIDPolygon = 0;
+  //        else pDoc->m_flagAddIDPolygon = 1;
+  //    }
+  //    else
+  //    {
+  //        if (pDoc->m_flagBuildA)
+  //             pDoc->m_flagAddIDPolygon = 0;
+  //        else pDoc->m_flagAddIDPolygon = 1;
+  //    } // if/else½áÊø
+  //    pDoc->m_flagAddPointArray.clear( );
+  //    pDoc->m_flagAdd = 1;
+  //    mb_statusSetText("Çë°´Êó±ê×ó¼üÔÚ¹¤×÷ÇøÖĞÌí¼ÓĞÂÍâ»·µÄµã", "ÇëÓÃÊó±êÓÒ¼ü½áÊøĞÂÍâ»·Ìí¼Ó²Ù×÷");
+  //}
+
+
+  //void CPolyBooleanView::OnAddInloop()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagAdd!=0)
+  //    {
+  //        MessageBox("Ç°Ò»¸öÌí¼Ó²Ù×÷»¹Ã»ÓĞÍê³É£¬Çë¼ÌĞøÇ°Ò»¸ö²Ù×÷»ò°´Êó±êÓÒ¼ü½áÊøÇ°Ò»¸öÌí¼Ó²Ù×÷¡£", "²Ù×÷´íÎó");
+  //    } // if½áÊø
+  //    bool flagSuceess = false;
+  //    CP_Polygon* pn = NULL;
+  //
+  // 
+  //    if (pDoc->m_flagSelect)
+  //    {
+  //        if (pDoc->m_flagSelectPolygon==0)
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 0;
+  //            pn = &(pDoc->m_a);
+  //        }
+  //        else
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 1;
+  //            pn = &(pDoc->m_b);
+  //        } // if/else½áÊø
+  //
+  // 
+  //       switch(pDoc->m_flagSelectType)
+  //        {
+  //        case 1: // µã¡£
+  //            flagSuceess = gb_findPointInLoop(*pn, pDoc->m_flagAddIDRegion,
+  //                pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop,
+  //                pDoc->m_flagSelectID);
+  //            break;
+  //        case 2: // »·¡£
+  //            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
+  //            pDoc->m_flagAddIDLoop = pDoc->m_flagSelectID;
+  //            flagSuceess = true;
+  //            break;
+  //        case 3: // ÇøÓò¡£
+  //            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            flagSuceess = true;
+  //            break;
+  //
+  // 
+  //        case 4: // ¶à±ßĞÎ¡£
+  //            pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
+  //            if (pDoc->m_flagAddIDRegion<0)
+  //                break;
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            if (pDoc->m_flagAddIDLoop<0)
+  //                break;
+  //            flagSuceess = true;
+  //            break;
+  //        } // switch½áÊø
+  //    }
+  //
+  // 
+  //    else
+  //    {
+  //        if (pDoc->m_flagBuildA)
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 0;
+  //            pn = &(pDoc->m_a);
+  //        }
+  //        else
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 1;
+  //            pn = &(pDoc->m_b);
+  //        } // if/else½áÊø
+  //
+  //        pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
+  //        if (pDoc->m_flagAddIDRegion>=0)
+  //        {
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            if (pDoc->m_flagAddIDLoop>=0)
+  //            {
+  //                flagSuceess = true;
+  //            } // if(idL)½áÊø
+  //        } // if(idr)½áÊø
+  //    } // if/else½áÊø
+  //
+  // 
+  //    if (flagSuceess)
+  //    {
+  //        pDoc->m_flagAddPointArray.clear( );
+  //        pDoc->m_flagAdd = 2;
+  //        mb_statusSetText("Çë°´Êó±ê×ó¼üÔÚ¹¤×÷ÇøÖĞÌí¼ÓĞÂÄÚ»·µÄµã", "ÇëÓÃÊó±êÓÒ¼ü½áÊøĞÂÄÚ»·Ìí¼Ó²Ù×÷");
+  //    }
+  //    else
+  //    {
+  //        pDoc->m_flagAdd = 0;
+  //        if (pDoc->m_flagAddIDPolygon==0)
+  //            mb_statusSetText("ÄÚ»·Ìí¼Ó²Ù×÷Ê§°Ü¡£", "¶à±ßĞÎA»¹Ã»ÓĞÈÎºÎÍâ»·¡£");
+  //        else
+  //            mb_statusSetText("ÄÚ»·Ìí¼Ó²Ù×÷Ê§°Ü¡£", "Çë¸ø¶à±ßĞÎBÔö¼ÓÍâ»·£¬ÔÙÖ´ĞĞ±¾²Ù×÷¡£");
+  //    } // if/else½áÊø
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnAddPoint()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (pDoc->m_flagAdd!=0)
+  //    {
+  //        MessageBox("Ç°Ò»¸öÌí¼Ó²Ù×÷»¹Ã»ÓĞÍê³É£¬Çë¼ÌĞøÇ°Ò»¸ö²Ù×÷»ò°´Êó±êÓÒ¼ü½áÊøÇ°Ò»¸öÌí¼Ó²Ù×÷¡£", "²Ù×÷´íÎó");
+  //        return;
+  //    } // if½áÊø
+  //
+  //    bool flagSuceess = false;
+  //    CP_Polygon* pn = NULL;
+  //
+  // 
+  //   if (pDoc->m_flagSelect)
+  //    {
+  //        if (pDoc->m_flagSelectPolygon==0)
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 0;
+  //            pn = &(pDoc->m_a);
+  //        }
+  //        else
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 1;
+  //            pn = &(pDoc->m_b);
+  //        } // if/else½áÊø
+  //
+  //        switch(pDoc->m_flagSelectType)
+  //        {
+  //        case 1: // µã¡£
+  //            flagSuceess = gb_findPointInLoop(*pn, pDoc->m_flagAddIDRegion,
+  //                pDoc->m_flagAddIDLoop, pDoc->m_flagAddIDPointInLoop,
+  //                pDoc->m_flagSelectID);
+  //            break;
+  //
+  // 
+  //      case 2: // »·¡£
+  //            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
+  //            pDoc->m_flagAddIDLoop = pDoc->m_flagSelectID;
+  //            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
+  //            if (pDoc->m_flagAddIDPointInLoop<0)
+  //                break;
+  //            flagSuceess = true;
+  //            break;
+  //        case 3: // ÇøÓò¡£
+  //            pDoc->m_flagAddIDRegion = pDoc->m_flagSelectRegion;
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
+  //            if (pDoc->m_flagAddIDPointInLoop<0)
+  //                break;
+  //            flagSuceess = true;
+  //            break;
+  //
+  // 
+  //        case 4: // ¶à±ßĞÎ¡£
+  //            pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
+  //            if (pDoc->m_flagAddIDRegion<0)
+  //                break;
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            if (pDoc->m_flagAddIDLoop<0)
+  //                break;
+  //            pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
+  //            if (pDoc->m_flagAddIDPointInLoop<0)
+  //                break;
+  //            flagSuceess = true;
+  //            break;
+  //        } // switch½áÊø
+  //    }
+  //
+  // 
+  //    else
+  //    {
+  //        if (pDoc->m_flagBuildA)
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 0;
+  //            pn = &(pDoc->m_a);
+  //        }
+  //        else
+  //        {
+  //            pDoc->m_flagAddIDPolygon = 1;
+  //            pn = &(pDoc->m_b);
+  //        } // if/else½áÊø
+  //
+  //        pDoc->m_flagAddIDRegion = (*pn).m_regionArray.size( )-1;
+  //
+  // 
+  //        if (pDoc->m_flagAddIDRegion>=0)
+  //        {
+  //            pDoc->m_flagAddIDLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray.size( )-1;
+  //            if (pDoc->m_flagAddIDLoop>=0)
+  //            {
+  //                pDoc->m_flagAddIDPointInLoop = (*pn).m_regionArray[pDoc->m_flagAddIDRegion].m_loopArray[pDoc->m_flagAddIDLoop].m_pointIDArray.size( )-1; 
+  //                if (pDoc->m_flagAddIDPointInLoop>=0)
+  //                {
+  //                    flagSuceess = true;
+  //                } // if(idLv)½áÊø
+  //            } // if(idL)½áÊø
+  //        } // if(idr)½áÊø
+  //    } // if/else½áÊø
+  //
+  // 
+  //    if (flagSuceess)
+  //    {
+  //        pDoc->m_flagAdd = 3;
+  //        mb_statusSetText("ÓÃÊó±ê×ó¼üÔÚ¹¤×÷ÇøÖĞÌí¼Óµã", "ÓÃÊó±êÓÒ¼ü½áÊøµãÌí¼Ó²Ù×÷");
+  //    }
+  //    else
+  //    {
+  //        pDoc->m_flagAdd = 0;
+  //        if (pDoc->m_flagAddIDPolygon==0)
+  //            mb_statusSetText("µãÌí¼Ó²Ù×÷Ê§°Ü¡£", "¶à±ßĞÎA»¹Ã»ÓĞÈÎºÎÍâ»·¡£");
+  //        else
+  //            mb_statusSetText("µãÌí¼Ó²Ù×÷Ê§°Ü¡£", "Çë¸ø¶à±ßĞÎBÔö¼ÓÍâ»·£¬ÔÙÖ´ĞĞ±¾²Ù×÷¡£");
+  //        } // if/else½áÊø
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnDelete()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    if (!pDoc->m_flagSelect)
+  //    {
+  //        MessageBox("»¹Ã»ÓĞÊ°È¡Í¼ĞÎ£¬ÎŞ·¨É¾³ı¡£", "ÎŞĞ§²Ù×÷");
+  //		return;
+  //    } // if½áÊø
+  //    if (pDoc->m_flagAdd!=0)
+  //    {
+  //        MessageBox("Ìí¼ÓÍ¼ĞÎµÄ²Ù×÷»¹Ã»ÓĞ½áÊø£¬ÎŞ·¨É¾³ı¡£", "ÎŞĞ§²Ù×÷");
+  //		return;
+  //    } // if½áÊø
+  //
+  // 
+  //   CP_Polygon* pn;
+  //    if (pDoc->m_flagSelectPolygon==0)
+  //         pn = &(pDoc->m_a);
+  //    else pn = &(pDoc->m_b);
+  //    switch(pDoc->m_flagSelectType)
+  //    {
+  //    case 1: // µã¡£
+  //        gb_removePoint(*pn, pDoc->m_flagSelectID);
+  //        break;
+  //    case 2: // »·¡£
+  //        gb_removeLoop(*pn, pDoc->m_flagSelectRegion, pDoc->m_flagSelectID);
+  //        break;
+  //    case 3: // ÇøÓò¡£
+  //        gb_removeRegion(*pn, pDoc->m_flagSelectRegion);
+  //        break;
+  //    case 4: // ¶à±ßĞÎ¡£
+  //        pn->mb_clear( );
+  //        break;
+  //    } // switch½áÊø
+  //    pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateMoveSame(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagMoveSame);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnMoveSame()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagMoveSame ^= true;
+  //    if (!(pDoc->m_flagMoveSame))
+  //    {
+  //        pDoc->m_flagSelectIDSetInA.clear( );
+  //        pDoc->m_flagSelectIDSetInB.clear( );
+  //    } // if½áÊø
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateViewA(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagShowA);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnViewA()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagShowA ^= true;
+  //
+  //    if (!(pDoc->m_flagShowA))
+  //        if (pDoc->m_flagSelectPolygon==0)
+  //            pDoc->m_flagSelect = false;
+  //
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateViewB(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagShowB);
+  //}
+
+
+  //void CPolyBooleanView::OnViewB()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagShowB ^= true;
+  //    if (!(pDoc->m_flagShowB))
+  //        if (pDoc->m_flagSelectPolygon!=0)
+  //            pDoc->m_flagSelect = false;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateViewPointId(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagShowPointID);
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnViewPointId()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagShowPointID ^= true;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnViewTFace()
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pDoc->m_flagShowTriangleFace ^= true;
+  //    Invalidate(); // Ë¢ĞÂ
+  //}
+  //
+  // 
+  //void CPolyBooleanView::OnUpdateViewTFace(CCmdUI *pCmdUI)
+  //{
+  //    // TODO: ÔÚ´ËÌí¼ÓÃüÁî¸üĞÂÓÃ»§½çÃæ´¦Àí³ÌĞò´úÂë
+  //	CPolyBooleanDoc* pDoc = GetDocument();
+  //	ASSERT_VALID(pDoc);
+  //	if (!pDoc)
+  //		return;
+  //    pCmdUI->SetCheck(pDoc->m_flagShowTriangleFace);
+  //}
 
 void CPolyBooleanView::OnComboAorb()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnNewRightInloop()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnEdgeNumber()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnNewRightOutloop()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectPoint()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectPolygon()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectLoop()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectTriangle()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectRegion()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnSelectOnly()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnAddOutloop()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnDelete()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnAddInloop()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnMoveSame()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnAddPoint()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnCheck()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnPolygonUnion()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnPolygonBA()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnPolygonIntersection()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnPolygonTriangulation()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnPolygonAB()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnTolerance()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewA()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewB()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewResult()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewTFace()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewTEdge()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewTFaceEdge()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewFit()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewStandard()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewStatusBar()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }
 
 
 void CPolyBooleanView::OnViewPointId()
 {
-	// TODO: åœ¨æ­¤æ·»åŠ å‘½ä»¤å¤„ç†ç¨‹åºä»£ç 
+	// TODO: ÔÚ´ËÌí¼ÓÃüÁî´¦Àí³ÌĞò´úÂë
 }

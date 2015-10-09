@@ -59,13 +59,13 @@
     <ClCompile Include="PolyBooleanDoc.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="PolyBooleanView.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="CP_Polygon.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="CP_Triangle.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PolyBooleanView.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
